@@ -59,6 +59,7 @@ header ul li p {
 .first-section div span {
   background-color: rgba(180, 121, 217, 0.15);
   /* ტექსტის ფერი როგორ იცვლება ?*/
+  color: rgb(180, 121, 217);
   font-family: Plus Jakarta Sans;
   font-weight: bold;
   font-size: 18px;
