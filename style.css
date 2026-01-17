@@ -1,0 +1,98 @@
+/* global styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+/* End of global styles*/
+/* Body */
+.suggestion {
+  background-color: rgb(219, 244, 226);
+  /* აქ ორი ფერია მოცემული და გადასვლაა გაკეთებული */
+  text-align: center;
+}
+.suggestion p {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25.2px;
+  letter-spacing: 0;
+}
+.suggestion p a {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 32px;
+  letter-spacing: 0;
+}
+/* button როგორ გავიტანო მარცხნივ */
+
+/* header */
+header h1 {
+  text-align: left;
+}
+header nav ul li {
+  text-align: center;
+}
+/* ერთმანეთის გვერდით როგორ უნდა დაიწყოს? */
+header ul li {
+  text-align: right;
+}
+header ul li span {
+  font-family: plus jakarta sans;
+  font-weight: bold;
+  font-size: 14px;
+  /* line-height: აქ რაღაც არ გამოვიდა; */
+  letter-spacing: 1px;
+}
+header ul li p {
+  font-family: plus jakarta sans;
+  font-weight: bold;
+  font-size: 18px;
+  /* line-height: არც ეს გამოვიდა; */
+}
+
+/* 1st section */
+.first-section div span {
+  background-color: rgba(180, 121, 217, 0.15);
+  /* ტექსტის ფერი როგორ იცვლება ?*/
+  font-family: Plus Jakarta Sans;
+  font-weight: bold;
+  font-size: 18px;
+}
+.first-section div h2 {
+  font-family: Plus Jakarta Sans;
+  font-weight: bold;
+  font-size: 68px;
+}
+.first-section div p {
+  font-family: Plus Jakarta Sans;
+  font-weight: bold;
+  font-size: 18px;
+}
+.first-section div a {
+  font-family: Plus Jakarta Sans;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: rgb(46, 187, 119);
+}
+.first-section ul h3 {
+  font-weight: bold;
+  font-size: 48px;
+}
+.first-section ul p {
+  font-weight: medium;
+  font-size: 18px;
+}
+.second-section {
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+}
+.second-section p {
+  font-family: Plus Jakarta Sans;
+  font-weight: bold;
+  font-size: 24;
+}
