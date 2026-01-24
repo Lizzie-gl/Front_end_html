@@ -12,88 +12,493 @@ a {
 /* End of global styles*/
 /* Body */
 .suggestion {
-  background-color: rgb(219, 244, 226);
-  /* აქ ორი ფერია მოცემული და გადასვლაა გაკეთებული */
-  text-align: center;
+  background-color: rgb(209, 244, 226);
+  /* მეორე ფერის გადასვლაა გაკეთებული */
 }
 .suggestion p {
-  font-weight: bold;
+  text-align: center;
+  color: black;
+  font-family: Plus Jakarta Sans;
+  /* ამ ფონტს ფემილის არ აღიქვამს */
   font-size: 18px;
-  line-height: 25.2px;
-  letter-spacing: 0;
+  font-weight: bold;
+  line-height: 25px;
 }
 .suggestion p a {
-  font-weight: bold;
+  background-color: white;
   font-size: 15px;
   line-height: 32px;
-  letter-spacing: 0;
+  color: black;
 }
-/* button როგორ გავიტანო მარცხნივ */
-
-/* header */
-header h1 {
-  text-align: left;
-}
-header nav ul li {
+/* HEADER */
+.hdup nav ul li {
   text-align: center;
+  font-size: 16px;
+  font-weight: bold;
 }
-/* ერთმანეთის გვერდით როგორ უნდა დაიწყოს? */
-header ul li {
+.hdup nav ul li a {
+  color: black;
+}
+/* .hdup nav img { */
+/* მარტო იმიჯი როგორ გავაცენტრო */
+/* } */
+.hddwn ul li {
   text-align: right;
 }
-header ul li span {
-  font-family: plus jakarta sans;
-  font-weight: bold;
+.hddwn ul li:nth-child(2) {
+  color: rgb(155, 155, 155);
   font-size: 14px;
-  /* line-height: აქ რაღაც არ გამოვიდა; */
-  letter-spacing: 1px;
+  line-height: 20px;
 }
-header ul li p {
-  font-family: plus jakarta sans;
+.hddwn ul li:nth-child(2) a {
   font-weight: bold;
   font-size: 18px;
-  /* line-height: არც ეს გამოვიდა; */
+  color: black;
+  line-height: 32px;
 }
-
-/* 1st section */
-.first-section div span {
+.hddwn ul li:last-child button {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  line-height: 48px;
+}
+/* MAIN */
+.firstdiv span {
+  font-weight: bold;
+  font-size: 18px;
   background-color: rgba(180, 121, 217, 0.15);
-  /* ტექსტის ფერი როგორ იცვლება ?*/
   color: rgb(180, 121, 217);
-  font-family: Plus Jakarta Sans;
-  font-weight: bold;
-  font-size: 18px;
+  line-height: 15px;
 }
-.first-section div h2 {
-  font-family: Plus Jakarta Sans;
+.firstdiv h2 {
   font-weight: bold;
   font-size: 68px;
+  line-height: 81px;
 }
-.first-section div p {
-  font-family: Plus Jakarta Sans;
-  font-weight: bold;
+.firstdiv p {
+  font-weight: lighter;
+  /* medium იყო მოცემული მაგრამ არ იწერება */
   font-size: 18px;
+  color: rgb(126, 126, 126);
+  line-height: 32px;
 }
-.first-section div a {
-  font-family: Plus Jakarta Sans;
+.firstdiv ul li:first-child a {
+  background-color: rgb(46, 187, 119);
+  color: white;
+  font-size: 16px;
+  line-height: 56px;
+}
+.firstdiv ul li:last-child a {
   font-weight: bold;
   font-size: 16px;
-  background-color: rgb(46, 187, 119);
+  line-height: 56px;
+  color: black;
 }
-.first-section ul h3 {
-  font-weight: bold;
-  font-size: 48px;
-}
-.first-section ul p {
-  font-weight: medium;
+.first-section ul li {
   font-size: 18px;
+  font-weight: lighter;
+  color: rgb(126, 126, 126);
+  line-height: 32px;
+}
+.first-section ul li b {
+  color: black;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 48px;
+}
+/* Second section */
+.second-section {
+  background-color: rgb(245, 245, 245);
+  text-align: center;
 }
 .second-section {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+}
+/* Third section */
+.third-section {
+  text-align: center;
+}
+.third-section p {
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 32px;
+  color: rgb(126, 126, 126);
+}
+.third-section h3 {
+  line-height: 45px;
+  font-size: 32px;
+}
+.third-section span {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 56px;
+}
+/* fourth section */
+.fourth-section {
+  background-color: rgb(245, 245, 245);
+  text-align: center;
+}
+.fourth-section h2 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+}
+.fourth-section p {
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 32px;
+  color: rgb(126, 126, 126);
+}
+.fourth-section a {
+  background-color: rgb(46, 187, 119);
+  color: white;
+  font-size: 18px;
+  line-height: 56px;
+  font-weight: bold;
+}
+/* fifth section */
+.fifth-section {
   text-align: center;
   background-color: rgb(245, 245, 245);
 }
-.second-section p {
-  font-family: Plus Jakarta Sans;
+.fifth-section h2 {
   font-weight: bold;
-  font-size: 24;
+  font-size: 48px;
+  line-height: 60px;
+}
+.fifth-section p {
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 32px;
+  color: rgb(126, 126, 126);
+}
+.fifth-section h4 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: bold;
+}
+.lower ul li:nth-child(2) {
+  background-color: white;
+}
+.lower ul li:nth-child(2) p {
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 29px;
+  color: rgb(126, 126, 126);
+}
+/* sixth section */
+.sixth-section {
+  text-align: center;
+}
+.sixth-section h2 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+}
+.second-section h2 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+}
+.sixth-section p {
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 32px;
+  color: rgb(126, 126, 126);
+}
+.picks h4 a {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: black;
+}
+.men-picks span:first-child {
+  color: white;
+  background-color: rgb(46, 187, 119);
+  font-size: 14px;
+  line-height: 22px;
+}
+.men-picks span:nth-child(2) {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.men-picks ul li:first-child {
+  color: rgb(46, 187, 119);
+  font-size: 16px;
+  line-height: 28px;
+}
+.men-picks ul li:last-child {
+  color: rgb(155, 155, 155);
+  font-size: 14px;
+  line-height: 25px;
+}
+.wch span:first-child {
+  color: white;
+  background-color: rgb(46, 187, 119);
+  font-size: 14px;
+  line-height: 22px;
+}
+.wch span:nth-child(2) {
+  color: white;
+  background-color: rgb(180, 121, 217);
+  font-size: 14px;
+  line-height: 22px;
+}
+.wch ul li {
+  line-height: 29px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.wch ul li:nth-child(3) {
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 25px;
+}
+.toddler-picks span {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 22px;
+  background-color: rgb(240, 145, 85);
+}
+.toddler-picks ul li:last-child {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 29px;
+}
+.img6th a {
+  background-color: rgb(46, 187, 119);
+  font-size: 15px;
+  line-height: 48px;
+  font-weight: bold;
+  color: white;
+}
+.img6th h3 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 45px;
+}
+/* seventh section */
+.seventh-section {
+  background-color: rgb(245, 245, 245);
+}
+.top-part {
+  text-align: left;
+}
+.top-part h2 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 60px;
+}
+.top-part p {
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 32px;
+  color: rgb(126, 126, 126);
+}
+.top-part a {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 56px;
+  background-color: rgb(46, 187, 119);
+  color: white;
+}
+.offerings {
+  text-align: right;
+}
+.offerings ul li {
+  background-color: white;
+}
+.offerings ul li {
+  font-size: 15px;
+  line-height: 27px;
+  font-weight: bolder;
+  color: rgb(126, 126, 126);
+}
+.offerings h3 {
+  font-size: 20px;
+  line-height: 28px;
+  font-family: bold;
+  color: black;
+}
+.bottom {
+  text-align: right;
+}
+.bottom-info h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+}
+.bottom-info p {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: lighter;
+  color: rgb(126, 126, 126);
+}
+.bottom-info a {
+  background-color: rgb(46, 187, 119);
+  color: white;
+  font-size: 15px;
+  line-height: 48px;
+  font-weight: bold;
+}
+/* eighth section */
+.eighth-section {
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+}
+.more-resources h2 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 60px;
+}
+.more-resources p {
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 32px;
+  color: rgb(126, 126, 126);
+}
+.service-info span {
+  color: rgb(46, 187, 119);
+  background-color: white;
+}
+.service-info h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+}
+.service-info ul li {
+  font-size: 15px;
+  line-height: 27px;
+  color: rgb(126, 126, 126);
+}
+.service-info ul li b {
+  color: black;
+}
+.ninth-section {
+  text-align: center;
+}
+.ninth-section h2 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 60px;
+}
+.ninth-section p {
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 32px;
+  color: rgb(126, 126, 126);
+}
+.costumer-comments ul li {
+  background-color: white;
+}
+.costumer-comments p {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: lighter;
+}
+.costumer-comments ul li {
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: lighter;
+  color: rgb(126, 126, 126);
+}
+.costumer-comments ul li span {
+  color: black;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: bold;
+}
+/* FOOTER */
+.footer-ad {
+  text-align: center;
+  background-color: rgba(180, 121, 217, 0.15);
+}
+.footer-ad h2 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: bold;
+}
+.footer-ad p {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: lighter;
+  color: rgb(126, 126, 126);
+}
+.ad-middle ul li:first-child a {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 48px;
+  background-color: rgb(46, 187, 119);
+  color: white;
+}
+.ad-middle ul li:last-child a {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 48px;
+  background-color: white;
+  color: black;
+}
+/* FOOTER SOCIALMEDIA */
+.socialmedia {
+  text-align: center;
+}
+.socialmedia ul li a {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  color: black;
+}
+/* BOTTOMFOOTER */
+.bottom-part {
+  background-color: rgb(245, 245, 245);
+  text-align: center;
+}
+.main-info ul li {
+  font-size: 16px;
+  line-height: 28px;
+  color: rgb(126, 126, 126);
+}
+.main-info ul li a {
+  color: rgb(126, 126, 126);
+}
+.main-info ul li:nth-child(2) a {
+  color: black;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+}
+.information h5 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: bold;
+}
+.information ul li a {
+  font-size: 16px;
+  font-weight: lighter;
+  color: rgb(126, 126, 126);
+  line-height: 29px;
+}
+.newsletter h5 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: bold;
+}
+.newsletter p {
+  font-size: 16px;
+  font-weight: lighter;
+  color: rgb(126, 126, 126);
+  line-height: 29px;
+}
+/*PAYMENT FOOTER  */
+.payment {
+  background-color: rgb(245, 245, 245);
+  text-align: center;
+}
+.payment p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: lighter;
+  color: rgb(126, 126, 126);
 }
