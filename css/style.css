@@ -1,4 +1,6 @@
 /* global styles */
+
+
 * {
   margin: 0;
   padding: 0;
@@ -288,7 +290,7 @@ a {
   line-height: 29px;
 }
 .sixth-section__bottom {
-  background-image: url("media/Link → banner-26.png.png");
+  background-image: url("../images/Link → banner-26.png.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -318,7 +320,7 @@ a {
   margin: 0px 419px 17px 0px;
 }
 .sixth-section__bottom--right {
-  background-image: url("media/Link → banner-27.jpg.png");
+  background-image: url("../images/Link → banner-27.jpg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -508,7 +510,7 @@ a {
 .footer__ad {
   text-align: center;
   background-color: rgba(180, 121, 217, 0.15);
-  background-image: url("media/Main footer.png");
+  background-image: url("../images/Main footer.png");
   padding: 130px 686px 150px 686px;
 }
 .footer__ad h2 {
@@ -540,17 +542,17 @@ a {
   border-radius: 12px;
   padding: 18px 50px 18px 25px;
 }
-/* FOOTER SOCIALMEDIA */
-.footer__socialmedia {
+/* FOOTER SOCIAL ../images */
+.footer__social../images {
   text-align: center;
 }
-.footer__socialmedia ul li a {
+.footer__social../images ul li a {
   font-size: 18px;
   line-height: 32px;
   font-weight: bold;
   color: black;
 }
-/* BOTTOMFOOTER */
+/* BOTTOM FOOTER */
 .footer__bottom {
   background-color: rgb(245, 245, 245);
   text-align: center;
@@ -602,3 +604,27 @@ a {
   font-weight: lighter;
   color: rgb(126, 126, 126);
 }
+
+/* .promo-bock {
+}
+
+.promo-bock__info {
+}
+
+.promo-bock__info-button {
+}
+
+.promo-bock__info-button--last-item {
+}
+
+scss
+.promo-bock {
+  &__info {
+    &-button {
+      &--last-item {
+
+
+      }
+    }
+  }
+} */
