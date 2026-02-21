@@ -1,6 +1,5 @@
 /* global styles */
 
-
 * {
   margin: 0;
   padding: 0;
@@ -63,95 +62,95 @@ a {
   line-height: 48px;
 }
 /* //////////////////////////////////////////////////////////////////////////////////MAIN */
-.first-section__div span {
+.promo-block ul li {
+  font-size: 18px;
+  font-weight: lighter;
+  color: rgb(126, 126, 126);
+  line-height: 32px;
+}
+.promo-block ul li b {
+  color: black;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 48px;
+}
+.promo-block__info span {
   font-weight: bold;
   font-size: 18px;
   background-color: rgba(180, 121, 217, 0.15);
   color: rgb(180, 121, 217);
   line-height: 15px;
 }
-.first-section__div h2 {
+.promo-block__info h2 {
   font-weight: bold;
   font-size: 68px;
   line-height: 81px;
 }
-.first-section__div p {
+.promo-block__info p {
   font-weight: lighter;
   /* medium იყო მოცემული მაგრამ არ იწერება */
   font-size: 18px;
   color: rgb(126, 126, 126);
   line-height: 32px;
 }
-.first-section__div ul li:first-child a {
+.promo-block__info ul li:first-child a {
   background-color: rgb(46, 187, 119);
   color: white;
   font-size: 16px;
   line-height: 56px;
 }
-.first-section__div ul li:last-child a {
+.promo-block__info ul li:last-child a {
   font-weight: bold;
   font-size: 16px;
   line-height: 56px;
   color: black;
 }
-.first-section ul li {
-  font-size: 18px;
-  font-weight: lighter;
-  color: rgb(126, 126, 126);
-  line-height: 32px;
-}
-.first-section ul li b {
-  color: black;
-  font-size: 48px;
-  font-weight: bold;
-  line-height: 48px;
-}
 /* /////////////////////////////////////////////////////////////////////////////Second section */
-.second-section {
+.Partners {
   background-color: rgb(245, 245, 245);
   text-align: center;
 }
-.second-section {
+.Partners {
   font-weight: bold;
   font-size: 24px;
   line-height: 33px;
 }
 /*////////////////////////////////////////////////////////////////////////////// Third section */
-.third-section {
+.instructions {
   text-align: center;
 }
-.third-section p {
+.instructions p {
   font-size: 18px;
   font-weight: lighter;
   line-height: 32px;
   color: rgb(126, 126, 126);
 }
-.third-section h3 {
+.instructions h3 {
   line-height: 45px;
   font-size: 32px;
 }
-.third-section span {
+.instructions span {
   font-weight: bold;
   font-size: 18px;
   line-height: 56px;
 }
 /* /////////////////////////////////////////////////////////////////////////fourth section */
-.fourth-section {
+.costumer-ideas {
   background-color: rgb(245, 245, 245);
   text-align: center;
 }
-.fourth-section h2 {
+.costumer-ideas h2 {
   font-weight: bold;
   font-size: 48px;
   line-height: 60px;
 }
-.fourth-section p {
+.costumer-ideas p {
   font-size: 18px;
   font-weight: lighter;
   line-height: 32px;
   color: rgb(126, 126, 126);
 }
-.fourth-section a {
+.costumer-ideas a {
   background-color: rgb(46, 187, 119);
   color: white;
   font-size: 18px;
@@ -159,36 +158,36 @@ a {
   font-weight: bold;
 }
 /* ////////////////////////////////////////////////////////////////////////////fifth section */
-.fifth-section {
+.printing-info {
   text-align: center;
   background-color: rgb(245, 245, 245);
 }
-.fifth-section h2 {
+.printing-info h2 {
   font-weight: bold;
   font-size: 48px;
   line-height: 60px;
 }
-.fifth-section p {
+.printing-info p {
   font-size: 18px;
   font-weight: lighter;
   line-height: 32px;
   color: rgb(126, 126, 126);
 }
-.fifth-section h4 {
+.printing-info h4 {
   font-size: 20px;
   line-height: 28px;
   font-weight: bold;
 }
-.fifth-section__lower ul li:nth-child(2) {
+.printing-info__lower ul li:nth-child(2) {
   background-color: white;
 }
-.fifth-section__lower ul li:nth-child(2) p {
+.printing-info__lower ul li:nth-child(2) p {
   font-size: 18px;
   font-weight: lighter;
   line-height: 29px;
   color: rgb(126, 126, 126);
 }
-.fifth-section__lower--list {
+.fifth-section__lower-list {
   background-color: rgb(245, 245, 245);
   text-align: left;
   width: 494px;
@@ -197,113 +196,113 @@ a {
   margin-bottom: 15px;
   margin-left: 255px;
 }
-.fifth-section__lower--list li {
+.fifth-section__lower-list li {
   padding: 30px 50px 30px 30px;
 }
-.fifth-section__lower--list li:nth-child(2) {
+.fifth-section__lower-list li:nth-child(2) {
   height: 156px;
   width: 494px;
   border-radius: 12px;
   box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.08);
 }
-.fifth-section__lower--list li p {
+.fifth-section__lower-list li p {
   margin-right: 51px;
   margin-top: 20px;
 }
 /* //////////////////////////////////////////////////////////////////////////////sixth section */
-.sixth-section {
+.costumer-picks {
   text-align: center;
 }
-.sixth-section h2 {
+.costumer-picks h2 {
   font-weight: bold;
   font-size: 48px;
   line-height: 60px;
 }
-.second-section h2 {
+.costumer-picks h2 {
   font-weight: bold;
   font-size: 48px;
   line-height: 60px;
 }
-.sixth-section p {
+.costumer-picks p {
   font-size: 18px;
   font-weight: lighter;
   line-height: 32px;
   color: rgb(126, 126, 126);
 }
-.sixth-section__picks h4 a {
+.costumer-picks h4 a {
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
   color: black;
 }
-.sixth-section__picks__men span:first-child {
+.costumer-picks__choices-men span:first-child {
   color: white;
   background-color: rgb(46, 187, 119);
   font-size: 14px;
   line-height: 22px;
 }
-.sixth-section__picks__men span:nth-child(2) {
+.costumer-picks__choices-men span:nth-child(2) {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
 }
-.sixth-section__picks__men ul li:first-child {
+.costumer-picks__choices-men ul li:first-child {
   color: rgb(46, 187, 119);
   font-size: 16px;
   line-height: 28px;
 }
-.sixth-section__picks__men ul li:last-child {
+.costumer-picks__choices-men ul li:last-child {
   color: rgb(155, 155, 155);
   font-size: 14px;
   line-height: 25px;
 }
-.sixth-section__picks__women span:first-child {
+.costumer-picks__choices-women span:first-child {
   color: white;
   background-color: rgb(46, 187, 119);
   font-size: 14px;
   line-height: 22px;
 }
-.sixth-section__picks__women span:nth-child(2) {
+.costumer-picks__choices-women span:nth-child(2) {
   color: white;
   background-color: rgb(180, 121, 217);
   font-size: 14px;
   line-height: 22px;
 }
-.sixth-section__picks__women ul li {
+.costumer-picks__choices-women ul li {
   line-height: 29px;
   font-size: 16px;
   font-weight: bold;
 }
-.sixth-section__picks__women ul li:nth-child(3) {
+.costumer-picks__choices-women ul li:nth-child(3) {
   font-weight: lighter;
   font-size: 14px;
   line-height: 25px;
 }
-.sixth-section__picks__toddler span {
+.costumer-picks__choices-toddler span {
   font-size: 14px;
   font-weight: bold;
   line-height: 22px;
   background-color: rgb(240, 145, 85);
 }
-.sixth-section__picks__toddler ul li:last-child {
+.costumer-picks__choices-toddler ul li:last-child {
   font-size: 16px;
   font-weight: bold;
   line-height: 29px;
 }
-.sixth-section__bottom {
-  background-image: url("../images/Link → banner-26.png.png");
+.costumer-picks__bottom {
+  background-image: url("../images/costumer-picks-background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 690px 360px;
 }
-.sixth-section__bottom {
+.costumer-picks__bottom {
   padding: 57px 0px 67px 41px;
   border-radius: 12px;
 }
-.sixth-section__bottom p {
+.costumer-picks__bottom p {
   margin: 0px 423px 30px 41px;
 }
-.sixth-section__bottom a {
+.costumer-picks__bottom a {
   background-color: rgb(46, 187, 119);
   font-size: 15px;
   line-height: 48px;
@@ -313,29 +312,29 @@ a {
   padding: 14px 50px 15px 25px;
   border-radius: 12px;
 }
-.sixth-section__bottom h3 {
+.costumer-picks__bottom h3 {
   font-weight: bold;
   font-size: 32px;
   line-height: 45px;
   margin: 0px 419px 17px 0px;
 }
-.sixth-section__bottom--right {
-  background-image: url("../images/Link → banner-27.jpg.png");
+.costumer-picks__bottom-right {
+  background-image: url("../images/costumer-picks-background-right.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 690px 360px;
 }
-.sixth-section__bottom--right h3 {
+.costumer-picks__bottom-right h3 {
   font-weight: bold;
   font-size: 32px;
   line-height: 45px;
   margin: 0px 419px 17px 0px;
 }
-.sixth-section__bottom--right p {
+.costumer-picks__bottom-right p {
   margin: 0px 423px 30px 41px;
 }
-.sixth-section__bottom--right a {
+.costumer-picks__bottom-right a {
   background-color: rgb(46, 187, 119);
   font-size: 15px;
   line-height: 48px;
@@ -345,11 +344,11 @@ a {
   padding: 14px 50px 15px 25px;
   border-radius: 12px;
 }
-.sixth-section__bottom--right {
+.costumer-picks__bottom-right {
   padding: 57px 0px 67px 41px;
   border-radius: 12px;
 }
-.sixth-section__colors ul li:first-child {
+.costumer-picks__choices-colors ul li:first-child {
   display: inline-block;
   background: rgb(215, 169, 131);
   text-indent: -9999999px;
@@ -357,9 +356,9 @@ a {
   height: 14px;
   border-radius: 100%;
   border: 2px solid white;
-  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.025);
 }
-.sixth-section__colors ul li:nth-child(2) {
+.costumer-picks__choices-colors ul li:nth-child(2) {
   display: inline-block;
   background: rgb(0, 0, 0);
   text-indent: -9999999px;
@@ -367,71 +366,71 @@ a {
   height: 14px;
   border-radius: 100%;
   border: 2px solid white;
-  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.025);
 }
-.sixth-section__colors ul li:nth-child(3) {
+.costumer-picks__choices-colors ul li:nth-child(3) {
   font-size: 14px;
   font-family: sans-serif;
   display: inline-block;
 }
 /*//////////////////////////////////////////////////////////////////////////////////////// seventh section */
-.seventh-section {
+.page-promo {
   background-color: rgb(245, 245, 245);
 }
-.seventh-section__top {
+.page-promo__top {
   text-align: left;
 }
-.seventh-section__top h2 {
+.page-promo__top h2 {
   font-size: 48px;
   font-weight: bold;
   line-height: 60px;
 }
-.seventh-section__top p {
+.page-promo__top p {
   font-size: 18px;
   font-weight: lighter;
   line-height: 32px;
   color: rgb(126, 126, 126);
 }
-.seventh-section__top a {
+.page-promo__top a {
   font-size: 16px;
   font-weight: bold;
   line-height: 56px;
   background-color: rgb(46, 187, 119);
   color: white;
 }
-.seventh-section__offerings {
+.page-promo__offerings {
   text-align: right;
 }
-.seventh-section__offerings ul li {
+.page-promo__offerings ul li {
   background-color: white;
 }
-.seventh-section__offerings ul li {
+.page-promo__offerings ul li {
   font-size: 15px;
   line-height: 27px;
   font-weight: bolder;
   color: rgb(126, 126, 126);
 }
-.seventh-section__offerings h3 {
+.page-promo__offerings h3 {
   font-size: 20px;
   line-height: 28px;
   font-family: bold;
   color: black;
 }
-.seventh-section__bottom {
+.page-promo__bottom {
   text-align: right;
 }
-.seventh-section__bottom-info h3 {
+.page-promo__bottom-info h3 {
   font-size: 24px;
   font-weight: bold;
   line-height: 34px;
 }
-.seventh-section__bottom-info p {
+.page-promo__bottom-info p {
   font-size: 18px;
   line-height: 32px;
   font-weight: lighter;
   color: rgb(126, 126, 126);
 }
-.seventh-section__bottom-info a {
+.page-promo__bottom-info a {
   background-color: rgb(46, 187, 119);
   color: white;
   font-size: 15px;
@@ -439,68 +438,68 @@ a {
   font-weight: bold;
 }
 /* ///////////////////////////////////////////////////////////////////////////////////////////eighth section */
-.eighth-section {
+.resources {
   text-align: center;
   background-color: rgb(245, 245, 245);
 }
-.eighth-section__resources h2 {
+.resources__info h2 {
   font-size: 48px;
   font-weight: bold;
   line-height: 60px;
 }
-.eighth-section__resources p {
+.resources__info p {
   font-size: 18px;
   font-weight: lighter;
   line-height: 32px;
   color: rgb(126, 126, 126);
 }
-.eighth-section__services__service-info span {
+.resources__services-info span {
   color: rgb(46, 187, 119);
   background-color: white;
 }
-.eighth-section__services__service-info h3 {
+.resources__services-info h3 {
   font-size: 24px;
   font-weight: bold;
   line-height: 34px;
 }
-.eighth-section__services__service-info ul li {
+.resources__services-info ul li {
   font-size: 15px;
   line-height: 27px;
   color: rgb(126, 126, 126);
 }
-.eighth-section__services__service-info ul li b {
+.resources__services-info ul li b {
   color: black;
 }
 /* /////////////////////////////////////////////////////////////////////////////////////////NINTH-section */
-.ninth-section {
+.costumer-feedback {
   text-align: center;
 }
-.ninth-section h2 {
+.costumer-feedback h2 {
   font-size: 48px;
   font-weight: bold;
   line-height: 60px;
 }
-.ninth-section p {
+.costumer-feedback p {
   font-size: 18px;
   font-weight: lighter;
   line-height: 32px;
   color: rgb(126, 126, 126);
 }
-.ninth-section__comments ul li {
+.costumer-feedback__comments ul li {
   background-color: white;
 }
-.ninth-section__comments p {
+.costumer-feedback__comments p {
   font-size: 20px;
   line-height: 36px;
   font-weight: lighter;
 }
-.ninth-section__comments ul li {
+.costumer-feedback__comments ul li {
   font-size: 15px;
   line-height: 21px;
   font-weight: lighter;
   color: rgb(126, 126, 126);
 }
-.ninth-section__comments ul li span {
+.costumer-feedback__comments ul li span {
   color: black;
   font-size: 18px;
   line-height: 25px;
@@ -510,7 +509,7 @@ a {
 .footer__ad {
   text-align: center;
   background-color: rgba(180, 121, 217, 0.15);
-  background-image: url("../images/Main footer.png");
+  background-image: url("../images/footer background.png");
   padding: 130px 686px 150px 686px;
 }
 .footer__ad h2 {
@@ -543,10 +542,10 @@ a {
   padding: 18px 50px 18px 25px;
 }
 /* FOOTER SOCIAL ../images */
-.footer__social../images {
+.footer__social-media {
   text-align: center;
 }
-.footer__social../images ul li a {
+.footer__social-media ul li a {
   font-size: 18px;
   line-height: 32px;
   font-weight: bold;
