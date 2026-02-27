@@ -1,6 +1,7 @@
 /* global styles */
 
 * {
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,22 +16,23 @@ a {
 /* Body */
 .suggestion {
   background-color: rgb(209, 244, 226);
-  /* მეორე ფერის გადასვლაა გაკეთებული */
+  padding: 13px 700px;
 }
 .suggestion p {
-  text-align: center;
   color: black;
-  font-family: Plus Jakarta Sans;
-  /* ამ ფონტს ფემილის არ აღიქვამს */
   font-size: 18px;
   font-weight: bold;
+  text-align: center;
   line-height: 25px;
 }
 .suggestion p a {
-  background-color: white;
+  color: black;
   font-size: 15px;
   line-height: 32px;
-  color: black;
+  padding: 10px 20px;
+  border-radius: 7px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: white;
 }
 /* HEADER */
 .suggestion__upper nav ul li {
@@ -50,22 +52,26 @@ a {
   line-height: 20px;
 }
 .suggestion__bottom ul li:nth-child(2) a {
-  font-weight: bold;
-  font-size: 18px;
   color: black;
+  font-size: 18px;
+  font-weight: bold;
   line-height: 32px;
 }
 .suggestion__bottom ul li:last-child button {
-  background-color: black;
   color: white;
   font-size: 15px;
+  font-weight: bold;
   line-height: 48px;
+  padding: 10px 36px;
+  border-radius: 12px;
+  background-color: black;
 }
 /* //////////////////////////////////////////////////////////////////////////////////MAIN */
+/* promo-block -1*/
 .promo-block ul li {
+  color: rgb(126, 126, 126);
   font-size: 18px;
   font-weight: lighter;
-  color: rgb(126, 126, 126);
   line-height: 32px;
 }
 .promo-block ul li b {
@@ -75,69 +81,74 @@ a {
   line-height: 48px;
 }
 .promo-block__info span {
-  font-weight: bold;
-  font-size: 18px;
-  background-color: rgba(180, 121, 217, 0.15);
   color: rgb(180, 121, 217);
+  font-size: 18px;
+  font-weight: bold;
   line-height: 15px;
+  padding: 9px 18px;
+  border-radius: 40px;
+  background-color: rgba(180, 121, 217, 0.15);
 }
 .promo-block__info h2 {
-  font-weight: bold;
   font-size: 68px;
+  font-weight: bold;
   line-height: 81px;
 }
 .promo-block__info p {
-  font-weight: lighter;
-  /* medium იყო მოცემული მაგრამ არ იწერება */
-  font-size: 18px;
   color: rgb(126, 126, 126);
+  font-size: 18px;
+  font-weight: lighter;
   line-height: 32px;
 }
 .promo-block__info ul li:first-child a {
-  background-color: rgb(46, 187, 119);
   color: white;
   font-size: 16px;
   line-height: 56px;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: rgb(46, 187, 119);
 }
 .promo-block__info ul li:last-child a {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 56px;
   color: black;
-}
-/* /////////////////////////////////////////////////////////////////////////////Second section */
-.Partners {
-  background-color: rgb(245, 245, 245);
-  text-align: center;
-}
-.Partners {
+  font-size: 16px;
   font-weight: bold;
+  line-height: 56px;
+}
+/*partners */
+.Partners {
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+}
+.Partners {
   font-size: 24px;
+  font-weight: bold;
   line-height: 33px;
 }
-/*////////////////////////////////////////////////////////////////////////////// Third section */
+/*instructions */
 .instructions {
   text-align: center;
 }
 .instructions p {
+  color: rgb(126, 126, 126);
   font-size: 18px;
   font-weight: lighter;
   line-height: 32px;
-  color: rgb(126, 126, 126);
 }
 .instructions h3 {
-  line-height: 45px;
   font-size: 32px;
+  line-height: 45px;
 }
 .instructions span {
+  width: 56px;
+  height: 56px;
   font-weight: bold;
   font-size: 18px;
   line-height: 56px;
 }
-/* /////////////////////////////////////////////////////////////////////////fourth section */
+/*costumer-ideas */
 .costumer-ideas {
-  background-color: rgb(245, 245, 245);
   text-align: center;
+  background-color: rgb(245, 245, 245);
 }
 .costumer-ideas h2 {
   font-weight: bold;
@@ -145,19 +156,21 @@ a {
   line-height: 60px;
 }
 .costumer-ideas p {
+  color: rgb(126, 126, 126);
   font-size: 18px;
   font-weight: lighter;
   line-height: 32px;
-  color: rgb(126, 126, 126);
 }
 .costumer-ideas a {
-  background-color: rgb(46, 187, 119);
   color: white;
   font-size: 18px;
-  line-height: 56px;
   font-weight: bold;
+  line-height: 56px;
+  padding: 20px 45px;
+  border-radius: 12px;
+  background-color: rgb(46, 187, 119);
 }
-/* ////////////////////////////////////////////////////////////////////////////fifth section */
+/* printing-info*/
 .printing-info {
   text-align: center;
   background-color: rgb(245, 245, 245);
@@ -168,82 +181,86 @@ a {
   line-height: 60px;
 }
 .printing-info p {
+  color: rgb(126, 126, 126);
   font-size: 18px;
   font-weight: lighter;
   line-height: 32px;
-  color: rgb(126, 126, 126);
 }
 .printing-info h4 {
   font-size: 20px;
-  line-height: 28px;
   font-weight: bold;
+  line-height: 28px;
 }
 .printing-info__lower ul li:nth-child(2) {
   background-color: white;
 }
 .printing-info__lower ul li:nth-child(2) p {
+  color: rgb(126, 126, 126);
   font-size: 18px;
   font-weight: lighter;
   line-height: 29px;
-  color: rgb(126, 126, 126);
 }
-.fifth-section__lower-list {
-  background-color: rgb(245, 245, 245);
-  text-align: left;
+.printing-info__lower-list {
   width: 494px;
   height: 697px;
   margin-top: 15px;
   margin-bottom: 15px;
   margin-left: 255px;
+  text-align: left;
+  background-color: rgb(245, 245, 245);
 }
-.fifth-section__lower-list li {
+.printing-info__lower-list li {
   padding: 30px 50px 30px 30px;
 }
-.fifth-section__lower-list li:nth-child(2) {
-  height: 156px;
+.printing-info__lower-list li:nth-child(2) {
   width: 494px;
+  height: 156px;
   border-radius: 12px;
   box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.08);
 }
-.fifth-section__lower-list li p {
+.printing-info__lower-list li p {
   margin-right: 51px;
   margin-top: 20px;
 }
-/* //////////////////////////////////////////////////////////////////////////////sixth section */
+/* costumer-picks*/
 .costumer-picks {
   text-align: center;
 }
 .costumer-picks h2 {
-  font-weight: bold;
   font-size: 48px;
+  font-weight: bold;
   line-height: 60px;
 }
 .costumer-picks h2 {
-  font-weight: bold;
   font-size: 48px;
+  font-weight: bold;
   line-height: 60px;
 }
 .costumer-picks p {
+  color: rgb(126, 126, 126);
   font-size: 18px;
   font-weight: lighter;
   line-height: 32px;
-  color: rgb(126, 126, 126);
 }
 .costumer-picks h4 a {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 25px;
   color: black;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 25px;
 }
 .costumer-picks__choices-men span:first-child {
   color: white;
-  background-color: rgb(46, 187, 119);
   font-size: 14px;
   line-height: 22px;
+  padding: 6px;
+  border-radius: 3px;
+  background-color: rgb(46, 187, 119);
 }
 .costumer-picks__choices-men span:nth-child(2) {
-  background-color: rgba(0, 0, 0, 0.5);
   color: white;
+  padding: 6px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .costumer-picks__choices-men ul li:first-child {
   color: rgb(46, 187, 119);
@@ -257,15 +274,19 @@ a {
 }
 .costumer-picks__choices-women span:first-child {
   color: white;
-  background-color: rgb(46, 187, 119);
   font-size: 14px;
   line-height: 22px;
+  padding: 6px;
+  border-radius: 3px;
+  background-color: rgb(46, 187, 119);
 }
 .costumer-picks__choices-women span:nth-child(2) {
   color: white;
-  background-color: rgb(180, 121, 217);
   font-size: 14px;
   line-height: 22px;
+  padding: 6px;
+  border-radius: 3px;
+  background-color: rgb(180, 121, 217);
 }
 .costumer-picks__choices-women ul li {
   line-height: 29px;
@@ -277,10 +298,33 @@ a {
   font-size: 14px;
   line-height: 25px;
 }
+.costumer-picks__choices-children span:first-child {
+  color: white;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 6px;
+  border-radius: 3px;
+  background-color: rgb(46, 187, 119);
+}
+.costumer-picks__choices-children span:nth-child(2) {
+  color: white;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 6px;
+  border-radius: 3px;
+  background-color: rgb(180, 121, 217);
+}
+.costumer-picks__choices-children ul li {
+  line-height: 29px;
+  font-size: 16px;
+  font-weight: bold;
+}
 .costumer-picks__choices-toddler span {
   font-size: 14px;
   font-weight: bold;
   line-height: 22px;
+  padding: 6px;
+  border-radius: 3px;
   background-color: rgb(240, 145, 85);
 }
 .costumer-picks__choices-toddler ul li:last-child {
@@ -288,92 +332,80 @@ a {
   font-weight: bold;
   line-height: 29px;
 }
+.costumer-picks__choices-colors ul li:first-child {
+  text-indent: -9999999px;
+  width: 14px;
+  height: 14px;
+  border: 2px solid white;
+  border-radius: 100%;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.025);
+  background: rgb(215, 169, 131);
+}
+.costumer-picks__choices-colors ul li:nth-child(2) {
+  text-indent: -9999999px;
+  width: 14px;
+  height: 14px;
+  border: 2px solid white;
+  border-radius: 100%;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.025);
+  background: rgb(0, 0, 0);
+}
+.costumer-picks__choices-colors ul li:nth-child(3) {
+  font-size: 14px;
+  font-weight: lighter;
+}
 .costumer-picks__bottom {
+  width: 690px;
+  height: 360px;
+  text-align: left;
+  padding: 57px 0px 67px 41px;
+  border-radius: 12px;
   background-image: url("../images/costumer-picks-background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 690px 360px;
 }
-.costumer-picks__bottom {
-  padding: 57px 0px 67px 41px;
-  border-radius: 12px;
-}
-.costumer-picks__bottom p {
-  margin: 0px 423px 30px 41px;
-}
+
 .costumer-picks__bottom a {
-  background-color: rgb(46, 187, 119);
-  font-size: 15px;
-  line-height: 48px;
-  font-weight: bold;
   color: white;
-  margin: 0px 276px 67px 0px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 48px;
   padding: 14px 50px 15px 25px;
   border-radius: 12px;
+  background-color: rgb(46, 187, 119);
 }
 .costumer-picks__bottom h3 {
   font-weight: bold;
   font-size: 32px;
   line-height: 45px;
-  margin: 0px 419px 17px 0px;
 }
 .costumer-picks__bottom-right {
+  width: 690px;
+  height: 360px;
+  text-align: left;
+  padding: 57px 0px 67px 41px;
+  border-radius: 12px;
   background-image: url("../images/costumer-picks-background-right.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 690px 360px;
 }
 .costumer-picks__bottom-right h3 {
-  font-weight: bold;
   font-size: 32px;
+  font-weight: bold;
   line-height: 45px;
-  margin: 0px 419px 17px 0px;
-}
-.costumer-picks__bottom-right p {
-  margin: 0px 423px 30px 41px;
 }
 .costumer-picks__bottom-right a {
-  background-color: rgb(46, 187, 119);
-  font-size: 15px;
-  line-height: 48px;
-  font-weight: bold;
   color: white;
-  margin: 0px 276px 67px 0px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 48px;
   padding: 14px 50px 15px 25px;
   border-radius: 12px;
+  background-color: rgb(46, 187, 119);
 }
-.costumer-picks__bottom-right {
-  padding: 57px 0px 67px 41px;
-  border-radius: 12px;
-}
-.costumer-picks__choices-colors ul li:first-child {
-  display: inline-block;
-  background: rgb(215, 169, 131);
-  text-indent: -9999999px;
-  width: 14px;
-  height: 14px;
-  border-radius: 100%;
-  border: 2px solid white;
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.025);
-}
-.costumer-picks__choices-colors ul li:nth-child(2) {
-  display: inline-block;
-  background: rgb(0, 0, 0);
-  text-indent: -9999999px;
-  width: 14px;
-  height: 14px;
-  border-radius: 100%;
-  border: 2px solid white;
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.025);
-}
-.costumer-picks__choices-colors ul li:nth-child(3) {
-  font-size: 14px;
-  font-family: sans-serif;
-  display: inline-block;
-}
-/*//////////////////////////////////////////////////////////////////////////////////////// seventh section */
+/*page-promo*/
 .page-promo {
   background-color: rgb(245, 245, 245);
 }
@@ -386,61 +418,77 @@ a {
   line-height: 60px;
 }
 .page-promo__top p {
+  color: rgb(126, 126, 126);
   font-size: 18px;
   font-weight: lighter;
   line-height: 32px;
-  color: rgb(126, 126, 126);
 }
 .page-promo__top a {
+  color: white;
   font-size: 16px;
   font-weight: bold;
   line-height: 56px;
+  padding: 20px 53px 20px 30px;
+  border-radius: 12px;
   background-color: rgb(46, 187, 119);
-  color: white;
-}
-.page-promo__offerings {
-  text-align: right;
 }
 .page-promo__offerings ul li {
+  width: 258px;
+  height: 326px;
+  color: rgb(126, 126, 126);
+  font-size: 15px;
+  font-weight: bolder;
+  line-height: 27px;
+  text-align: left;
+  margin: 30px;
+  padding: 34px 0px 34px 30px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
   background-color: white;
 }
-.page-promo__offerings ul li {
-  font-size: 15px;
-  line-height: 27px;
-  font-weight: bolder;
-  color: rgb(126, 126, 126);
-}
-.page-promo__offerings h3 {
-  font-size: 20px;
-  line-height: 28px;
-  font-family: bold;
+.page-promo__offerings ul li h3 {
   color: black;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+  margin-top: 27px;
+  margin-bottom: 21px;
 }
 .page-promo__bottom {
-  text-align: right;
+  width: 834px;
+  height: 277px;
+  text-align: left;
+  padding: 41px 415px 44px 50px;
+  border-radius: 12px;
+  background-image: url(../images/online\ products\ background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.page-promo__bottom-info h3 {
+.page-promo__bottom h3 {
   font-size: 24px;
   font-weight: bold;
   line-height: 34px;
 }
-.page-promo__bottom-info p {
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: lighter;
+.page-promo__bottom p {
   color: rgb(126, 126, 126);
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 32px;
 }
-.page-promo__bottom-info a {
-  background-color: rgb(46, 187, 119);
+.page-promo__bottom a {
   color: white;
   font-size: 15px;
-  line-height: 48px;
   font-weight: bold;
+  line-height: 48px;
+  padding: 15px 50px 15px 25px;
+  border-radius: 12px;
+  background-color: rgb(46, 187, 119);
 }
-/* ///////////////////////////////////////////////////////////////////////////////////////////eighth section */
+/* resources*/
 .resources {
   text-align: center;
-  background-color: rgb(245, 245, 245);
+  background-color: white;
 }
 .resources__info h2 {
   font-size: 48px;
@@ -448,14 +496,16 @@ a {
   line-height: 60px;
 }
 .resources__info p {
+  color: rgb(126, 126, 126);
   font-size: 18px;
   font-weight: lighter;
   line-height: 32px;
-  color: rgb(126, 126, 126);
 }
 .resources__services-info span {
   color: rgb(46, 187, 119);
-  background-color: white;
+  padding: 7px 12px;
+  border-radius: 40px;
+  background-color: rgb(245, 245, 245);
 }
 .resources__services-info h3 {
   font-size: 24px;
@@ -463,14 +513,14 @@ a {
   line-height: 34px;
 }
 .resources__services-info ul li {
+  color: rgb(126, 126, 126);
   font-size: 15px;
   line-height: 27px;
-  color: rgb(126, 126, 126);
 }
 .resources__services-info ul li b {
   color: black;
 }
-/* /////////////////////////////////////////////////////////////////////////////////////////NINTH-section */
+/*costumer-feedback*/
 .costumer-feedback {
   text-align: center;
 }
@@ -480,86 +530,96 @@ a {
   line-height: 60px;
 }
 .costumer-feedback p {
+  color: rgb(126, 126, 126);
   font-size: 18px;
   font-weight: lighter;
   line-height: 32px;
-  color: rgb(126, 126, 126);
 }
-.costumer-feedback__comments ul li {
-  background-color: white;
+.costumer-feedback__comments-info {
+  width: 450px;
+  height: 324px;
+  text-align: left;
+  padding: 40px 40px 46px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
 }
 .costumer-feedback__comments p {
   font-size: 20px;
-  line-height: 36px;
   font-weight: lighter;
+  line-height: 36px;
 }
 .costumer-feedback__comments ul li {
-  font-size: 15px;
-  line-height: 21px;
-  font-weight: lighter;
   color: rgb(126, 126, 126);
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: 21px;
+  background-color: white;
 }
 .costumer-feedback__comments ul li span {
   color: black;
   font-size: 18px;
-  line-height: 25px;
   font-weight: bold;
+  line-height: 25px;
 }
-/*//////////////////////////////////////////////////////////////////////////////////////////////// FOOTER */
+/*FOOTER */
 .footer__ad {
   text-align: center;
+  padding: 130px 686px 150px 686px;
+  border-radius: 10 px;
   background-color: rgba(180, 121, 217, 0.15);
   background-image: url("../images/footer background.png");
-  padding: 130px 686px 150px 686px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .footer__ad h2 {
   font-size: 48px;
-  line-height: 60px;
   font-weight: bold;
+  line-height: 60px;
 }
 .footer__ad p {
-  font-size: 20px;
-  line-height: 32px;
-  font-weight: lighter;
   color: rgb(126, 126, 126);
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 32px;
 }
 .footer__ad__middle ul li:first-child a {
+  color: white;
   font-size: 15px;
   font-weight: bold;
   line-height: 48px;
-  background-color: rgb(46, 187, 119);
-  color: white;
-  border-radius: 12px;
   padding: 18px 50px 18px 25px;
+  border-radius: 12px;
+  background-color: rgb(46, 187, 119);
 }
 .footer__ad__middle ul li:last-child a {
+  color: black;
   font-size: 15px;
   font-weight: bold;
   line-height: 48px;
-  background-color: white;
-  color: black;
-  border-radius: 12px;
   padding: 18px 50px 18px 25px;
+  border-radius: 12px;
+  background-color: white;
 }
 /* FOOTER SOCIAL ../images */
 .footer__social-media {
   text-align: center;
 }
 .footer__social-media ul li a {
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: bold;
   color: black;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
 }
 /* BOTTOM FOOTER */
 .footer__bottom {
-  background-color: rgb(245, 245, 245);
   text-align: center;
+  background-color: rgb(245, 245, 245);
 }
 .footer__bottom__main ul li {
+  color: rgb(126, 126, 126);
   font-size: 16px;
   line-height: 28px;
-  color: rgb(126, 126, 126);
 }
 .footer__bottom__main ul li a {
   color: rgb(126, 126, 126);
@@ -567,63 +627,39 @@ a {
 .footer__bottom__main ul li:nth-child(2) a {
   color: black;
   font-size: 18px;
-  line-height: 32px;
   font-weight: bold;
+  line-height: 32px;
 }
 .footer__bottom__information h5 {
   font-size: 20px;
-  line-height: 28px;
   font-weight: bold;
+  line-height: 28px;
 }
 .footer__bottom__information ul li a {
+  color: rgb(126, 126, 126);
   font-size: 16px;
   font-weight: lighter;
-  color: rgb(126, 126, 126);
   line-height: 29px;
 }
 .footer__bottom__newsletter h5 {
   font-size: 20px;
-  line-height: 28px;
   font-weight: bold;
+  line-height: 28px;
 }
 .footer__bottom__newsletter p {
+  color: rgb(126, 126, 126);
   font-size: 16px;
   font-weight: lighter;
-  color: rgb(126, 126, 126);
   line-height: 29px;
 }
 /*PAYMENT FOOTER  */
 .footer__payment {
-  background-color: rgb(245, 245, 245);
   text-align: center;
+  background-color: rgb(245, 245, 245);
 }
 .footer__payment p {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: lighter;
   color: rgb(126, 126, 126);
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 22px;
 }
-
-/* .promo-bock {
-}
-
-.promo-bock__info {
-}
-
-.promo-bock__info-button {
-}
-
-.promo-bock__info-button--last-item {
-}
-
-scss
-.promo-bock {
-  &__info {
-    &-button {
-      &--last-item {
-
-
-      }
-    }
-  }
-} */
