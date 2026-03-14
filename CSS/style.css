@@ -360,7 +360,7 @@ a {
   text-align: left;
   padding: 57px 0px 67px 41px;
   border-radius: 12px;
-  background-image: url("../images/costumer-picks-background.png");
+  background-image: url("../Home\ page/.costumer-picks__bottom");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -460,7 +460,7 @@ a {
   text-align: left;
   padding: 41px 415px 44px 50px;
   border-radius: 12px;
-  background-image: url(../images/online\ products\ background.png);
+  background-image: url(../Home\ page/.costumer-picks__bottom-right);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -662,4 +662,36 @@ a {
   font-size: 16px;
   font-weight: lighter;
   line-height: 22px;
+}
+/* Shop page */
+header {
+  background-color: #fff1f1;
+  padding-left: 255px;
+  padding-bottom: 28px;
+}
+.header-left {
+  display: inline;
+  width: 570px;
+}
+.header-left nav {
+  display: inline;
+  margin-top: 68px;
+}
+.header-left nav ul {
+  display: inline;
+}
+.header-left nav ul li {
+  display: inline;
+  margin-right: 30px;
+}
+.header-left nav ul li a {
+  color: black;
+  font-weight: bold;
+}
+.header-right {
+  display: inline;
+  width: 570px;
+}
+.header-right h1 {
+  display: inline;
 }
