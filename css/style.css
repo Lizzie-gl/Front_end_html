@@ -14,35 +14,46 @@ button {
   border: none;
 }
 
+.center {
+  width: 75%; /* 1440px */
+  max-width: 1440px;
+  margin: auto;
+  background-color: #ced63e;
+}
+
 /*///////////////////////////////////////////// Header AD */
 .header-ad {
   background-color: #f4eefa;
-  padding-top: 0.98%;
-  padding-bottom: 0.98%;
-  text-align: center;
 }
 .header-ad p {
-  display: inline-block;
   color: #b479d9;
   font-size: 15px;
   font-weight: bold;
   line-height: 21px;
+  text-align: center;
+  padding: 19px 0;
 }
 .header-ad button {
-  float: right;
-  margin-right: 1.04%;
+  position: absolute;
+  right: 1.19%;
+  top: 22px;
 }
 /* ///////////////////////////////////////////// Header  */
 header {
+  width: 100%;
+}
+header .center {
+  width: 100%;
+  max-width: 1845px;
+  max-width: initial;
   padding: 25px 1.97%;
+  overflow: hidden;
 }
-header h1 {
+header .main-header {
+  /* TODO: სურათის მაგივრად ბექგრაუნდი შემოიტანე */
   display: inline-block;
 }
-header div {
-  display: inline-block;
-}
-header nav {
+/* header nav {
   display: inline-block;
 }
 header ul {
@@ -50,13 +61,16 @@ header ul {
 }
 header ul li {
   display: inline-block;
-}
+} */
 /* TO DO ჰედერი უნდა გავაცენტრო */
 /* .main-header {
   text-align: center;
 } */
 .navigation {
   float: left;
+}
+.navigation li {
+  display: inline-block;
 }
 .navigation li a {
   color: black;
@@ -68,6 +82,7 @@ header ul li {
   float: right;
 }
 .user-links li {
+  display: inline-block;
   margin-right: 25px;
 }
 .quantity {
@@ -89,53 +104,85 @@ header ul li {
 }
 /*/////////////////////////////////////////////////////// Main */
 /* ////////////////////////////////////////////////////// Page Promo */
+.page-promo {
+  margin-bottom: 108px;
+  overflow: hidden;
+  background: pink;
+}
+
 .page-promo img {
-  width: 35.93%;
-  height: 9.52%;
+  width: 47.9%; /* 690 */
   border-radius: 12px;
+  float: left;
 }
-.page-promo__rating {
-  display: inline-block;
+
+.page-promo__info {
+  width: 45.5%; /* 655px */
+  float: right;
+  background: #ffc;
 }
-.page-promo__rating span {
+
+.page-promo__info > span {
   color: #b479d9;
   font-size: 18px;
   font-weight: bold;
   line-height: 25px;
+  margin-bottom: 20px;
   padding: 9px 18px;
-  background-color: #b479d926;
   border-radius: 40px;
+  background-color: #b479d926;
 }
 .page-promo__info h2 {
-  width: 546px;
-  height: 121px;
+  /* 
+    TODO: style of the code
+    display
+    width/height
+    font styles    
+    paddings
+    margins
+    border/border-radius/box-shadow
+    position
+    backgrounds
+    overflow
+  */
   font-size: 48px;
   line-height: 60px;
-  display: inline-block;
+  margin-bottom: 20px;
 }
 .page-promo__info p {
   height: 55px;
   color: #7e7e7e;
   font-size: 18px;
   line-height: 32px;
+  margin-bottom: 35px;
+  overflow: hidden;
 }
-.page-promo__info ul li span {
+.page-promo__info .page-promo__properties {
+  margin-bottom: 50px;
+}
+.page-promo__info .page-promo__properties li span {
   display: inline-block;
-  text-align: center;
   width: 32px;
   height: 32px;
-  margin-right: 15px;
   color: #11b196;
+  text-align: center;
+  border-radius: 50%;
   background: #e2f5f2;
+}
+.page-promo .page-promo__properties li:last-child a {
+  color: #000;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+.page-promo .page-promo__properties li:last-child a span {
+  display: inline-block;
+  margin-left: 13px;
+  padding: 5px 12px 5px 2px;
+  border: 3px solid #000;
   border-radius: 50px;
 }
-.page-promo ul {
-  display: inline-block;
-}
-.page-promo ul li {
-  display: inline-block;
-}
-.page-promo__links ul li:first-child a {
+.page-promo__info .page-promo__links li:first-child a {
   color: #eeeeee;
   display: inline-block;
   margin-right: 30px;
@@ -145,19 +192,6 @@ header ul li {
   background: #2ebb77;
   box-shadow: 0 4 4px #00000025;
   border-radius: 12px;
-}
-.page-promo ul li:last-child a {
-  color: #000;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
-}
-.page-promo ul li:last-child a span {
-  display: inline-block;
-  margin-left: 13px;
-  padding: 5px 12px 5px 2px;
-  border: 3px solid #000;
-  border-radius: 50px;
 }
 /* /////////////////////////////////////////////// Shirt-types */
 .shirt-types__info {
