@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 li {
   list-style-type: none;
@@ -12,11 +13,13 @@ button {
   background: none;
   border: none;
 }
-/*///////////////////////////////////////////// Header */
+
+/*///////////////////////////////////////////// Header AD */
 .header-ad {
   background-color: #f4eefa;
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 0.98%;
+  padding-bottom: 0.98%;
+  text-align: center;
 }
 .header-ad p {
   display: inline-block;
@@ -25,12 +28,16 @@ button {
   font-weight: bold;
   line-height: 21px;
 }
+.header-ad button {
+  float: right;
+  margin-right: 1.04%;
+}
+/* ///////////////////////////////////////////// Header  */
 header {
-  padding: 40px 38px;
+  padding: 25px 1.97%;
 }
 header h1 {
   display: inline-block;
-  /* აქ ზომებზე მაქვს შეკითხვა */
 }
 header div {
   display: inline-block;
@@ -41,14 +48,24 @@ header nav {
 header ul {
   display: inline-block;
 }
-header li {
+header ul li {
   display: inline-block;
+}
+/* TO DO ჰედერი უნდა გავაცენტრო */
+/* .main-header {
+  text-align: center;
+} */
+.navigation {
+  float: left;
 }
 .navigation li a {
   color: black;
   font-size: 15px;
   font-weight: bold;
   margin-right: 45px;
+}
+.user-links {
+  float: right;
 }
 .user-links li {
   margin-right: 25px;
@@ -71,9 +88,10 @@ header li {
   border-radius: 12px;
 }
 /*/////////////////////////////////////////////////////// Main */
+/* ////////////////////////////////////////////////////// Page Promo */
 .page-promo img {
-  width: 690px;
-  height: 803px;
+  width: 35.93%;
+  height: 9.52%;
   border-radius: 12px;
 }
 .page-promo__rating {
@@ -93,9 +111,9 @@ header li {
   height: 121px;
   font-size: 48px;
   line-height: 60px;
+  display: inline-block;
 }
 .page-promo__info p {
-  width: 590px;
   height: 55px;
   color: #7e7e7e;
   font-size: 18px;
@@ -141,6 +159,7 @@ header li {
   border: 3px solid #000;
   border-radius: 50px;
 }
+/* /////////////////////////////////////////////// Shirt-types */
 .shirt-types__info {
   text-align: center;
 }
@@ -182,10 +201,11 @@ header li {
   height: 210px;
   border-radius: 50%;
 }
-.quality-printing__choice {
+/* ////////////////////////////////////////////// Quality-printing */
+.quality-printing__choice image {
   display: inline-block;
-  height: 440px;
-  width: 450px;
+  height: 23.43%;
+  width: 5.34%;
   border-radius: 12px;
 }
 .quality-printing__choice a {
@@ -206,39 +226,40 @@ header li {
   text-align: center;
   /* TO Do - ფერების გადასვლა */
 }
-.Featured h2 {
+/* ////////////////////////////////////////////// Featured */
+.featured h2 {
   font-size: 40px;
   line-height: 46px;
   text-align: center;
   margin-bottom: 15px;
 }
-.Featured p {
+.featured p {
   font-size: 20px;
   line-height: 32px;
   color: #7e7e7e;
   text-align: center;
   margin-bottom: 75px;
 }
-.Featured__product {
+.featured__product {
   display: inline-block;
 }
-.Featured__product img {
+.featured__product img {
   width: 330px;
   height: 440px;
   border-radius: 12px;
 }
-.Featured__product h4 {
+.featured__product h4 {
   display: inline-block;
   font-size: 18px;
   line-height: 25px;
 }
-.Featured__product ul li {
+.featured__product ul li {
   display: inline-block;
   font-size: 16px;
   line-height: 28px;
   font-weight: bold;
 }
-.Featured__product p {
+.featured__product p {
   display: inline-block;
   color: #000;
   font-size: 16px;
@@ -263,10 +284,11 @@ header li {
   font-weight: bold;
   line-height: 28px;
 }
-.Featured__product--different li:first-child {
+/* /////////////////////////////////////////////////// Special-offer */
+.featured__product--different li:first-child {
   color: #2ebb77;
 }
-.Featured__product--different li:last-child {
+.featured__product--different li:last-child {
   font-size: 13px;
   line-height: 24px;
   text-decoration: line-through;
@@ -402,6 +424,7 @@ header li {
 .special-offer__promo-sale ul li:last-child {
   font-size: 40px;
 }
+/* /////////////////////////////////////////////////// Customize */
 .customize h2 {
   font-size: 72px;
   font-family: sans-serif;
@@ -452,4 +475,73 @@ header li {
 }
 .customize__info--right p {
   color: #7e7e7e;
+}
+/* /////////////////////////////////////////////////Services */
+.services {
+  text-align: center;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  background-color: #d9d9d9;
+}
+.services__option {
+  width: 24.44%;
+  display: inline-block;
+}
+/* ////////////////////////////////////////////////Article */
+.article {
+  width: 75%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+}
+.article__info {
+  display: inline-block;
+  width: 25%;
+}
+.article__info h3 {
+  font-size: 40px;
+}
+.article__item {
+  display: inline-block;
+  width: 25%;
+}
+.article__item a image {
+  width: 91.66%;
+  height: auto;
+}
+/* //////////////////////////////////////////Footer */
+/* //////////////////////////////////////////Footer-ad */
+.footer-ad {
+  padding-left: 12.5%;
+  padding-right: 12.5%;
+  background-color: #64cb9a;
+}
+.footer-ad_info {
+  padding-top: 90px;
+  padding-bottom: 105px;
+  width: 28.48%;
+  height: auto;
+}
+.footer-ad_info h2 {
+  color: white;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+.footer-ad_info p {
+  margin-bottom: 30px;
+  color: white;
+  font-size: 20px;
+}
+.footer-ad_info ul {
+  display: inline-block;
+}
+.footer-ad_info ul li {
+  display: inline-block;
+}
+.footer-ad_info ul li a {
+  color: #000;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 15px 25px;
+  background-color: white;
+  border-radius: 12px;
 }
