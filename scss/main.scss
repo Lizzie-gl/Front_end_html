@@ -1,0 +1,42 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  background: none;
+  border: none;
+}
+.center {
+  width: function-exists($name: Percent-1440); /* 1440px */
+  max-width: 1440px;
+  margin: auto;
+  background-color: variables.$purple-background;
+}
+// End of Global
+// Header AD
+.header-ad {
+  background-color: $purple-background;
+  p {
+    color: #b479d9;
+    font-size: 15px;
+    line-height: 21px;
+    padding: 19px 0;
+    font-family: $family;
+    text-align: center;
+    font-weight: $fontWeight;
+  }
+  button {
+    position: absolute;
+    right: 1.19%;
+    top: 22px;
+  }
+}
+// End of Header AD
+// Page-promo

@@ -13,16 +13,8 @@ button {
   background: none;
   border: none;
 }
-
-.center {
-  width: 75%; /* 1440px */
-  max-width: 1440px;
-  margin: auto;
-  background-color: #ced63e;
-}
-
 /*///////////////////////////////////////////// Header AD */
-.header-ad {
+/* .header-ad {
   background-color: #f4eefa;
 }
 .header-ad p {
@@ -37,7 +29,7 @@ button {
   position: absolute;
   right: 1.19%;
   top: 22px;
-}
+} */
 /* ///////////////////////////////////////////// Header  */
 header {
   width: 100%;
@@ -193,8 +185,34 @@ header ul li {
   box-shadow: 0 4 4px #00000025;
   border-radius: 12px;
 }
+/* ////////////////////////////////////////////////Shirt-types */
 /* /////////////////////////////////////////////// Shirt-types */
 .shirt-types__info {
+  width: 37.84%;
+  text-align: center;
+  background-color: #b479d9;
+}
+.shirt-types__choices {
+  background-color: #f09155;
+}
+.shirt-types__choices-style {
+  display: inline-block;
+  width: 20%;
+  height: 79.78%;
+  overflow: hidden;
+  background-color: #d7a983;
+}
+.shirt-types__choices-style a img {
+  width: 72.91%;
+  height: 70%;
+  margin: 15px 39px 22px 39px;
+  border-radius: 50%;
+}
+.shirt-types-name {
+  display: inline-block;
+  background-color: #64cb9a;
+}
+/* .shirt-types__info {
   text-align: center;
 }
 .shirt-types__info h2 {
@@ -215,26 +233,31 @@ header ul li {
   background: hsla(0, 0%, 0%, 0.31);
   border-radius: 3px;
 }
+.shirt-types__choices-style {
+  width: 20%;
+}
 .shirt-types__choices-style a {
+  display: inline-block;
   color: #000;
   font-size: 20px;
   font-weight: bolder;
-  line-height: 28px;
+  background-color: #2ebb77;
 }
 .shirt-types__choices-style span {
   color: #7e7e7e;
   font-size: 15px;
   line-height: 21px;
+  background-color: #b479d9;
 }
 .shirt-types__choices-style {
   display: inline-block;
 }
 .shirt-types__choices-style-img {
   display: inline-block;
-  width: 210px;
-  height: 210px;
+  width: 72.91%;
+  height: 70%;
   border-radius: 50%;
-}
+} */
 /* ////////////////////////////////////////////// Quality-printing */
 .quality-printing__choice image {
   display: inline-block;

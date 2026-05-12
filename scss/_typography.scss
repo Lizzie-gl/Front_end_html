@@ -1,0 +1,9 @@
+@mixin button($primary-color, $font-ssm, $border-radius, $font-weight: bold) {
+  color: $text-color;
+  font-size: $font-ssm;
+  line-height: $lineHeight;
+  font-family: $family;
+  font-weight: $fontWeight;
+  border-radius: $border-radius;
+  background-color: $primary-color;
+}
