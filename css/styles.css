@@ -1,0 +1,45 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+.center {
+  width: true; /* 1440px */
+  max-width: 1440px;
+  margin: auto;
+}
+
+.header-ad {
+  background-color: #f4eefa;
+}
+.header-ad p {
+  color: #b479d9;
+  font-size: 15px;
+  line-height: 21px;
+  padding: 19px 0;
+  text-align: center;
+  font-weight: bold;
+}
+.header-ad button {
+  position: absolute;
+  right: 1.19%;
+  top: 22px;
+}
+
+header {
+  width: 100%;
+}

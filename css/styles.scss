@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "typography" as *;
+@use "functions" as *;
 * {
   margin: 0px;
   padding: 0px;
@@ -17,18 +20,16 @@ button {
   width: function-exists($name: Percent-1440); /* 1440px */
   max-width: 1440px;
   margin: auto;
-  background-color: variables.$purple-background;
 }
 // End of Global
 // Header AD
 .header-ad {
-  background-color: $purple-background;
+  background-color: #f4eefa;
   p {
     color: #b479d9;
     font-size: 15px;
     line-height: 21px;
     padding: 19px 0;
-    font-family: $family;
     text-align: center;
     font-weight: $fontWeight;
   }
@@ -39,4 +40,7 @@ button {
   }
 }
 // End of Header AD
-// Page-promo
+// Header
+header {
+  width: 100%;
+}

@@ -42,10 +42,9 @@ header .center {
   overflow: hidden;
 }
 header .main-header {
-  /* TODO: სურათის მაგივრად ბექგრაუნდი შემოიტანე */
   display: inline-block;
 }
-/* header nav {
+header nav {
   display: inline-block;
 }
 header ul {
@@ -53,11 +52,12 @@ header ul {
 }
 header ul li {
   display: inline-block;
-} */
+}
+*/
 /* TO DO ჰედერი უნდა გავაცენტრო */
-/* .main-header {
+ .main-header {
   text-align: center;
-} */
+}
 .navigation {
   float: left;
 }
