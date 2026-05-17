@@ -1,6 +1,8 @@
 @use "variables" as *;
 @use "typography" as *;
 @use "functions" as *;
+@use "media" as *;
+
 * {
   margin: 0px;
   padding: 0px;
@@ -43,4 +45,45 @@ button {
 // Header
 header {
   width: 100%;
+  & .center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: Percent(1840); /* 1840 */
+    padding: 25px 0;
+    gap: 25px 2%;
+
+    /*  @media screen and (max-width: 906px) {
+      flex-direction: column;
+    } */
+
+    @include respond-to(906px) {
+      flex-direction: column;
+    }
+
+    /* @media screen and (max-width: 768px) {
+      padding: 5px 0;
+      gap: 10px;
+    } */
+
+    @include respond-to(768px) {
+      padding: 5px 0;
+      gap: 10px;
+    }
+
+    & .navigation {
+      & ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 25px;
+      }
+    }
+
+    & .user-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 25px;
+      font-family: font();
+    }
+  }
 }
