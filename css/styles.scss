@@ -72,10 +72,29 @@ header {
     }
 
     & .navigation {
-      & ul {
+      &_list {
         display: flex;
         flex-wrap: wrap;
         gap: 10px 25px;
+      }
+      &-item {
+        & a {
+          color: black;
+          display: inline-block;
+          text-decoration: none;
+          transition: all ease 2s;
+
+          &::after {
+            content: "";
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            margin-left: 5px;
+            border-top: 2px solid #000;
+            border-right: 2px solid #000;
+            transform: rotate(135deg);
+          }
+        }
       }
     }
 

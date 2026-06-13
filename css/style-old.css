@@ -53,9 +53,7 @@ header ul {
 header ul li {
   display: inline-block;
 }
-*/
-/* TO DO ჰედერი უნდა გავაცენტრო */
- .main-header {
+*/ .main-header {
   text-align: center;
 }
 .navigation {
@@ -281,7 +279,6 @@ header ul li {
   line-height: 100px;
   font-weight: lighter;
   text-align: center;
-  /* TO Do - ფერების გადასვლა */
 }
 /* ////////////////////////////////////////////// Featured */
 .featured h2 {
