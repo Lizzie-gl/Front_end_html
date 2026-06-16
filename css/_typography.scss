@@ -1,0 +1,14 @@
+@mixin button {
+  color: $text-color;
+  font-size: $font-ssm;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+  border-radius: $border-radius;
+  background-color: $primary-color;
+}
+@mixin sales {
+  color: white;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: $border-radius-sm;
+}
