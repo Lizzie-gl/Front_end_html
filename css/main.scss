@@ -1,0 +1,290 @@
+@use "variables";
+@use "typography";
+@use "functions";
+
+* {
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 30px 0px 30px 0px;
+}
+.header_navbar {
+  &_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    li {
+      margin-right: 75px;
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+      a {
+        font-size: variables.$font-sm;
+        font-weight: 500;
+        color: black;
+      }
+    }
+  }
+}
+.costumer-links {
+  display: flex;
+  flex-wrap: wrap;
+  & li {
+    justify-content: space-between;
+    margin-right: 45px;
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+  }
+}
+.page-promo {
+  background-image: url(/pictures/page-promo-background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: functions.percent(153px) functions.percent(58px)
+    functions.percent(116px) functions.percent(739px);
+  &_info {
+    width: functions.percent(643);
+    padding: functions.percent-promo(62px) functions.percent-promo(40px)
+      functions.percent-promo(40px) functions.percent-promo(40px);
+    background-color: #fff3e3;
+    text-align: left;
+
+    h2 {
+      font-size: 52px;
+      color: variables.$primary-color;
+    }
+    a {
+      width: functions.percent-promo(222px);
+      background-color: variables.$primary-color;
+      padding: functions.percent-promo(25px) functions.percent-promo(75px);
+      color: #fff;
+      font-weight: bold;
+      font-size: variables.$font-sm;
+    }
+  }
+}
+.page-promo_info-title {
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: #333333;
+  font-weight: 600;
+}
+.page-promo_info-text {
+  font-size: 18px;
+  color: #333333;
+  font-weight: 500;
+  margin-bottom: 45px;
+}
+.range {
+  margin-top: 55px;
+  &_info {
+    text-align: center;
+    h3 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 20px;
+      color: #666666;
+    }
+  }
+  &_rooms {
+    margin-top: 62px;
+    display: flex;
+    justify-content: center;
+    gap: functions.percent(20px);
+    &-option {
+      & a {
+        & img {
+          border-radius: 12px;
+        }
+      }
+    }
+  }
+}
+.option-name {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333333;
+}
+.products {
+  margin-top: 55px;
+  &_types {
+    display: flex;
+    justify-content: center;
+    gap: functions.percent(32px);
+    flex-wrap: wrap;
+  }
+  & h3 {
+    text-align: center;
+    color: #3a3a3a;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 32px;
+  }
+  &_options {
+    width: functions.percent(285px);
+    background-color: #f4f5f7;
+    margin-bottom: 32px;
+    position: relative;
+    & a {
+      display: block;
+      & img {
+        width: 100%;
+      }
+    }
+    &-info {
+      padding: 16px 0px 30px functions.percent-sale(16px);
+      & h4 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+      & ul :first-child {
+        font-size: 16px;
+        font-weight: 500;
+        color: #898989;
+        margin-bottom: 8px;
+      }
+      & ul :last-child {
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+    &--changed-price {
+      & p {
+        color: #898989;
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+      & ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: baseline;
+        gap: functions.percent-sale(16px);
+        & :first-child {
+          color: #3a3a3a;
+          font-size: 20px;
+          font-weight: 600;
+        }
+        & :last-child {
+          color: #898989;
+          font-size: 16px;
+          text-decoration: line-through;
+          font-weight: 400;
+        }
+      }
+    }
+    & .action-buttons {
+      display: none;
+      //   }
+      //   &:hover {
+      // background-color: rgba(58, 58, 58, 1);
+    }
+  }
+}
+.sale-30 {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 48px;
+  height: 48px;
+  background-color: variables.$sale-red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: variables.$font-sm;
+  color: #fff;
+  font-weight: 500;
+}
+.sale-new {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 48px;
+  height: 48px;
+  background-color: variables.$sale-blue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: variables.$font-sm;
+  color: #fff;
+  font-weight: 500;
+}
+.show-more {
+  display: inline-block;
+  padding: 12px 74px;
+  border: 1px solid rgba(184, 142, 47, 1);
+  color: rgba(184, 142, 47, 1);
+  font-size: 16px;
+  font-weight: 600;
+}
+.inspirations {
+  background-color: rgba(252, 248, 243, 1);
+  padding: 44px 0px 44px functions.percent(100px);
+  text-align: left;
+  display: flex;
+  margin-top: 70px;
+  &_info {
+    margin-top: 179px;
+    width: functions.percent(422px);
+    & h2 {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    & p {
+      font-size: 16px;
+      font-weight: 500;
+      color: #616161;
+      margin-bottom: 25px;
+    }
+    & a {
+      background-color: variables.$primary-color;
+      color: #fff;
+      padding: 12px 36px;
+    }
+  }
+  &_bedroom {
+    background-image: url(/pictures/inspiration-bedroom.png);
+    position: relative;
+    width: functions.percent(404px);
+  }
+  &_bedroom-info {
+    background-color: rgba(255, 255, 255, 0.767);
+    padding: 32px 32px 32px 32px;
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    & p {
+      color: rgba(97, 97, 97, 1);
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+    & h4 {
+      font-size: 28px;
+      color: rgba(58, 58, 58, 1);
+      font-weight: 600;
+    }
+  }
+}

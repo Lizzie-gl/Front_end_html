@@ -1,0 +1,9 @@
+@function percent($px, $base: 1440px) {
+  @return ($px/$base) * 100%;
+}
+@function percent-promo($px, $base: 643px) {
+  @return ($px/$base) * 100%;
+}
+@function percent-sale($px, $base: 285px) {
+  @return ($px/$base) * 100%;
+}

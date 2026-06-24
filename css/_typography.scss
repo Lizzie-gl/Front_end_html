@@ -1,0 +1,7 @@
+@mixin sale($bck) {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: $font-sm;
+  background-color: $bck;
+}

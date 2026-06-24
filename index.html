@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/pictures/Logo.png" type="image/png" />
     <title>Furniro</title>
+    <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
-    <header class="header">
-      <h1><img src="/pictures/Logo.png" alt="page logo" />Furniro</h1>
+    <header>
+      <h1>
+        <a href="./index.html"
+          ><img src="./pictures/logo-name.png" alt="Furniro logo"
+        /></a>
+      </h1>
       <nav class="header_navbar">
         <ul class="header_navbar_list">
           <li><a href="#">Home</a></li>
@@ -16,7 +21,7 @@
           <li><a href="#">About</a></li>
         </ul>
       </nav>
-      <ul>
+      <ul class="costumer-links">
         <li>
           <a href="#"
             ><img src="/pictures/icon-profile.png" alt="profile-icon"
@@ -42,9 +47,9 @@
     <main>
       <section class="page-promo">
         <div class="page-promo_info">
-          <p>New Arrival</p>
+          <p class="page-promo_info-title">New Arrival</p>
           <h2>Discover Our New Collection</h2>
-          <p>
+          <p class="page-promo_info-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil at
             asperiores nostrum maxime rem similique.
           </p>
@@ -58,107 +63,189 @@
         </div>
         <div class="range_rooms">
           <div class="range_rooms-option">
-            <a>
+            <a href="#">
               <img
                 src="./pictures/range-dining.png"
                 alt="dining-room-picture"
               />
             </a>
-            <p>Dining</p>
+            <a href="#" class="option-name">Dining</a>
           </div>
           <div class="range_rooms-option">
-            <a>
+            <a href="#">
               <img
                 src="./pictures/range-living.png"
                 alt="living-room-picture"
               />
             </a>
-            <p>Living</p>
+            <a href="#" class="option-name">Living</a>
           </div>
           <div class="range_rooms-option">
-            <a>
+            <a href="#">
               <img src="./pictures/range-bedroom.jpg" alt="bedroom-picture" />
             </a>
-            <p>Bedroom</p>
+            <a class="option-name">Bedroom</a>
           </div>
         </div>
       </section>
       <section class="products">
         <h3>Our Products</h3>
-        <div class="products_options products_options--changed-price">
-          <span class="sale-30%">-30%</span>
-          <img src="./pictures/products-syltherine.jpg" alt="cafe-chairs" />
-          <h4>Syltherine</h4>
-          <p>Stylish cafe chair</p>
-          <ul>
-            <li>Rp 2.500.000</li>
-            <li>Rp 3.500.000</li>
-          </ul>
+        <div class="products_types">
+          <div class="products_options products_options--changed-price">
+            <span class="sale-30">-30%</span>
+            <a href="#">
+              <img src="./pictures/products-syltherine.jpg" alt="cafe-chairs" />
+            </a>
+            <div class="action-buttons">
+              <button>Add to cart</button>
+              <button>Share</button>
+              <button>Compare</button>
+              <button>Like</button>
+            </div>
+            <div class="products_options-info">
+              <h4>Syltherine</h4>
+              <p>Stylish cafe chair</p>
+              <ul>
+                <li>Rp 2.500.000</li>
+                <li>Rp 3.500.000</li>
+              </ul>
+            </div>
+          </div>
+          <div class="products_options">
+            <a href="#">
+              <img src="./pictures/products-leviosa.png" alt="cafe-chair" />
+            </a>
+            <div class="action-buttons">
+              <button>Add to cart</button>
+              <button>Share</button>
+              <button>Compare</button>
+              <button>Like</button>
+            </div>
+            <div class="products_options-info">
+              <h4>Leviosa</h4>
+              <ul>
+                <li>Stylish cafe chair</li>
+                <li>Rp 2.500.000</li>
+              </ul>
+            </div>
+          </div>
+          <div class="products_options products_options--changed-price">
+            <span class="sale-30">-30%</span>
+            <a href="#">
+              <img src="./pictures/products-lolito.png" alt="beige-sofa" />
+            </a>
+            <div class="action-buttons">
+              <button>Add to cart</button>
+              <button>Share</button>
+              <button>Compare</button>
+              <button>Like</button>
+            </div>
+            <div class="products_options-info">
+              <h4>Lolito</h4>
+              <p>Luxury big sofa</p>
+              <ul>
+                <li>Rp 7.000.000</li>
+                <li>Rp 14.000.000</li>
+              </ul>
+            </div>
+          </div>
+          <div class="products_options">
+            <span class="sale-new">New</span>
+            <a href="#">
+              <img src="./pictures/products-respira.png" class="brown-sofa" />
+            </a>
+            <div class="action-buttons">
+              <button>Add to cart</button>
+              <button>Share</button>
+              <button>Compare</button>
+              <button>Like</button>
+            </div>
+            <div class="products_options-info">
+              <h4>Respira</h4>
+              <ul>
+                <li>Outdoor bar table and stool</li>
+                <li>Rp 500.000</li>
+              </ul>
+            </div>
+          </div>
+          <div class="products_options">
+            <a href="#">
+              <img src="./pictures/products-grifo.png" alt="Night-lamp" />
+            </a>
+            <div class="action-buttons">
+              <button>Add to cart</button>
+              <button>Share</button>
+              <button>Compare</button>
+              <button>Like</button>
+            </div>
+            <div class="products_options-info">
+              <h4>Grifo</h4>
+              <ul>
+                <li>Night lamp</li>
+                <li>Rp 1.500.000</li>
+              </ul>
+            </div>
+          </div>
+          <div class="products_options">
+            <span class="sale-new">New</span>
+            <a href="#">
+              <img src="./pictures/products-muggo.png" alt="Dark-sofa" />
+            </a>
+            <div class="action-buttons">
+              <button>Add to cart</button>
+              <button>Share</button>
+              <button>Compare</button>
+              <button>Like</button>
+            </div>
+            <div class="products_options-info">
+              <h4>Muggo</h4>
+              <ul>
+                <li>Small mug</li>
+                <li>Rp 150.000</li>
+              </ul>
+            </div>
+          </div>
+          <div class="products_options products_options--changed-price">
+            <span class="sale-30">-30%</span>
+            <a href="#">
+              <img src="./pictures/products-pingky.png" alt="gray-sofa" />
+            </a>
+            <div class="action-buttons">
+              <button>Add to cart</button>
+              <button>Share</button>
+              <button>Compare</button>
+              <button>Like</button>
+            </div>
+            <div class="products_options-info">
+              <h4>Pingky</h4>
+              <p>Cute bed set</p>
+              <ul>
+                <li>Rp 7.000.000</li>
+                <li>Rp 14.000.000</li>
+              </ul>
+            </div>
+          </div>
+          <div class="products_options">
+            <span class="sale-new">New</span>
+            <a href="#">
+              <img src="./pictures/products-potty.png" alt="orange-sofa" />
+            </a>
+            <div class="action-buttons">
+              <button>Add to cart</button>
+              <button>Share</button>
+              <button>Compare</button>
+              <button>Like</button>
+            </div>
+            <div class="products_options-info">
+              <h4>Potty</h4>
+              <ul>
+                <li>Minimalist flower pot</li>
+                <li>Rp 500.000</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="products_options">
-          <img src="./pictures/products-leviosa.png" alt="cafe-chair" />
-          <h4>Leviosa</h4>
-          <ul>
-            <li>Stylish cafe chair</li>
-            <li>Rp 2.500.000</li>
-          </ul>
-        </div>
-        <div class="products_options products_options--changed-price">
-          <span class="sale-30%">-30%</span>
-          <img src="./pictures/products-lolito.png" alt="beige-sofa" />
-          <h4>Lolito</h4>
-          <p>Luxury big sofa</p>
-          <ul>
-            <li>Rp 7.000.000</li>
-            <li>Rp 14.000.000</li>
-          </ul>
-        </div>
-        <div class="products_options">
-          <span class="sale-new">New</span>
-          <img src="./pictures/products-respira.png" class="brown-sofa" />
-          <h4>Respira</h4>
-          <ul>
-            <li>Outdoor bar table and stool</li>
-            <li>Rp 500.000</li>
-          </ul>
-        </div>
-        <div class="products_options">
-          <img src="./pictures/products-grifo.png" alt="Night-lamp" />
-          <h4>Grifo</h4>
-          <ul>
-            <li>Night lamp</li>
-            <li>Rp 1.500.000</li>
-          </ul>
-        </div>
-        <div class="products_options">
-          <span class="sale-new">New</span>
-          <img src="./pictures/products-muggo.png" alt="Dark-sofa" />
-          <h4>Muggo</h4>
-          <ul>
-            <li>Small mug</li>
-            <li>Rp 150.000</li>
-          </ul>
-        </div>
-        <div class="products_options products_options--changed-price">
-          <span class="sale-30%">-30%</span>
-          <img src="./pictures/products-pingky.png" alt="gray-sofa" />
-          <h4>Pingky</h4>
-          <p>Cute bed set</p>
-          <ul>
-            <li>Rp 7.000.000</li>
-            <li>Rp 14.000.000</li>
-          </ul>
-        </div>
-        <div class="products_options">
-          <span class="sale-new">New</span>
-          <img src="./pictures/products-potty.png" alt="orange-sofa" />
-          <h4>Potty</h4>
-          <ul>
-            <li>Minimalist flower pot</li>
-            <li>Rp 500.000</li>
-          </ul>
-        </div>
-        <a href="#">Show more</a>
+        <a href="#" class="show-more">Show more</a>
       </section>
       <section class="inspirations">
         <div class="inspirations_info">
@@ -170,11 +257,12 @@
           <a href="#">Explore more</a>
         </div>
         <div class="inspirations_bedroom">
-          <!-- TO DO Background pic -->
-          <p>01 Bed Room</p>
-          <h4>Inner Peace</h4>
-          <span>&#10230;</span>
+          <div class="inspirations_bedroom-info">
+            <p>01 - Bed Room</p>
+            <h4>Inner Peace</h4>
+          </div>
         </div>
+        <span>&#10230;</span>
         <img src="./pictures/inspiration-diningroom.png" />
       </section>
       <section class="furniture">
@@ -182,15 +270,6 @@
           <p>Share your setup with</p>
           <h3>#FuniroFurniture</h3>
         </div>
-        <img src="./pictures/furniture-shelves.png" alt="shelves" />
-        <img src="./pictures/furniture-desk.png" alt="desk-and-computer" />
-        <img src="./pictures/furniture-diningroom.png" alt="dining-room" />
-        <img src="./pictures/furniture-bedroom.png" alt="bedroom" />
-        <img src="./pictures/furniture-dining.png" alt="dining-room" />
-        <img src="./pictures/furniture-armchair.png" alt="armchair" />
-        <img src="./pictures/furniture-end-table.png" alt="end-tables" />
-        <img src="./pictures/furniture-pictureframe.png" alt="picture-frame" />
-        <img src="./pictures/furniture-kitchen.png" alt="kitchen" />
       </section>
     </main>
     <footer>
