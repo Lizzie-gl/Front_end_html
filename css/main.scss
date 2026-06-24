@@ -1,6 +1,6 @@
-@use "variables";
-@use "typography";
-@use "functions";
+@use "variables" as *;
+@use "typography" as *;
+@use "functions" as *;
 
 * {
   font-family: sans-serif;
@@ -10,6 +10,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 header {
   background-color: #fff;
   display: flex;
@@ -18,19 +19,23 @@ header {
   align-items: center;
   padding: 30px 0px 30px 0px;
 }
+
 .header_navbar {
-  &_list {
+  &___list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    li {
+
+    & li {
       margin-right: 75px;
+
       &:nth-child(3) {
         margin-right: 0;
       }
-      a {
-        font-size: variables.$font-sm;
+
+      & a {
+        font-size: $font-sm;
         font-weight: 500;
         color: black;
       }
@@ -40,71 +45,103 @@ header {
 .costumer-links {
   display: flex;
   flex-wrap: wrap;
+
   & li {
     justify-content: space-between;
     margin-right: 45px;
+
     &:nth-child(4) {
       margin-right: 0;
     }
   }
 }
+
 .page-promo {
-  background-image: url(/pictures/page-promo-background.png);
+  width: 100%;
+  height: 715px;
+  /* background-image: url(/pictures/page-promo-background.png);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  padding: functions.percent(153px) functions.percent(58px)
-    functions.percent(116px) functions.percent(739px);
-  &_info {
-    width: functions.percent(643);
-    padding: functions.percent-promo(62px) functions.percent-promo(40px)
-      functions.percent-promo(40px) functions.percent-promo(40px);
+  background-repeat: no-repeat; */
+  /* background: url(../pictures/page-promo-background.png) no-repeat center center;
+  background-size: cover; */
+  padding: percent(153px) percent(58px) percent(116px) percent(739px);
+  overflow: hidden;
+  position: relative;
+
+  & img {
+    display: inline-block;
+    min-width: 100%;
+    min-height: 100%;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &__info {
+    width: percent(643);
+    padding: percent(62, 643) percent(40, 643) percent(40, 643) percent(40, 643);
     background-color: #fff3e3;
     text-align: left;
+    position: absolute;
+    z-index: 3;
+    top: percent(62, 643);
+    right: percent(40, 643);
 
-    h2 {
+    & h2 {
       font-size: 52px;
-      color: variables.$primary-color;
+      color: $primary-color;
     }
-    a {
-      width: functions.percent-promo(222px);
-      background-color: variables.$primary-color;
-      padding: functions.percent-promo(25px) functions.percent-promo(75px);
+
+    & a {
+      width: percent(222, 643);
+      background-color: $primary-color;
+      padding: percent(25, 643) percent(75, 643);
       color: #fff;
       font-weight: bold;
-      font-size: variables.$font-sm;
+      font-size: $font-sm;
     }
   }
 }
+
 .page-promo_info-title {
   font-size: 18px;
   letter-spacing: 3px;
   color: #333333;
   font-weight: 600;
 }
+
 .page-promo_info-text {
   font-size: 18px;
   color: #333333;
   font-weight: 500;
   margin-bottom: 45px;
 }
+
 .range {
   margin-top: 55px;
-  &_info {
+
+  &__info {
     text-align: center;
-    h3 {
+
+    & h3 {
       font-size: 32px;
     }
-    p {
+
+    & p {
       font-size: 20px;
       color: #666666;
     }
   }
-  &_rooms {
+
+  &__rooms {
     margin-top: 62px;
     display: flex;
     justify-content: center;
-    gap: functions.percent(20px);
+    gap: percent(20px);
+
     &-option {
       & a {
         & img {
@@ -114,6 +151,7 @@ header {
     }
   }
 }
+
 .option-name {
   display: block;
   text-align: center;
@@ -122,14 +160,16 @@ header {
   font-weight: 600;
   color: #333333;
 }
+
 .products {
   margin-top: 55px;
-  &_types {
+  &__types {
     display: flex;
     justify-content: center;
-    gap: functions.percent(32px);
+    gap: percent(32px);
     flex-wrap: wrap;
   }
+
   & h3 {
     text-align: center;
     color: #3a3a3a;
@@ -137,40 +177,49 @@ header {
     font-weight: 700;
     margin-bottom: 32px;
   }
-  &_options {
-    width: functions.percent(285px);
+
+  &__options {
+    width: percent(285px);
     background-color: #f4f5f7;
     margin-bottom: 32px;
     position: relative;
+
     & a {
       display: block;
+
       & img {
         width: 100%;
       }
     }
+
     &-info {
-      padding: 16px 0px 30px functions.percent-sale(16px);
+      padding: 16px 0px 30px percent(16, 285);
+
       & h4 {
         font-size: 24px;
         font-weight: 600;
         margin-bottom: 8px;
       }
+
       & ul :first-child {
         font-size: 16px;
         font-weight: 500;
         color: #898989;
         margin-bottom: 8px;
       }
+
       & ul :last-child {
         font-size: 20px;
         font-weight: 600;
       }
     }
+
     &--changed-price {
       & p {
         color: #898989;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 16px; /* გადაიყვანე rem-ში, გამოიყენე ფუნქცია */
+        /* დაამატე unit less line height, გამოიყენე ფუნქცია */
         margin-bottom: 8px;
       }
       & ul {
@@ -178,12 +227,14 @@ header {
         flex-direction: row;
         justify-content: flex-start;
         align-items: baseline;
-        gap: functions.percent-sale(16px);
+        gap: percent(16, 285);
+
         & :first-child {
           color: #3a3a3a;
           font-size: 20px;
           font-weight: 600;
         }
+
         & :last-child {
           color: #898989;
           font-size: 16px;
@@ -192,6 +243,7 @@ header {
         }
       }
     }
+
     & .action-buttons {
       display: none;
       //   }
@@ -200,36 +252,39 @@ header {
     }
   }
 }
+
 .sale-30 {
   position: absolute;
   top: 25px;
   right: 25px;
   width: 48px;
   height: 48px;
-  background-color: variables.$sale-red;
+  background-color: $sale-red;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: variables.$font-sm;
+  font-size: $font-sm;
   color: #fff;
   font-weight: 500;
 }
+
 .sale-new {
   position: absolute;
   top: 25px;
   right: 25px;
   width: 48px;
   height: 48px;
-  background-color: variables.$sale-blue;
+  background-color: $sale-blue;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: variables.$font-sm;
+  font-size: $font-sm;
   color: #fff;
   font-weight: 500;
 }
+
 .show-more {
   display: inline-block;
   padding: 12px 74px;
@@ -238,49 +293,57 @@ header {
   font-size: 16px;
   font-weight: 600;
 }
+
 .inspirations {
   background-color: rgba(252, 248, 243, 1);
-  padding: 44px 0px 44px functions.percent(100px);
+  padding: 44px 0px 44px percent(100px);
   text-align: left;
   display: flex;
   margin-top: 70px;
-  &_info {
+
+  &__info {
     margin-top: 179px;
-    width: functions.percent(422px);
+    width: percent(422px);
     & h2 {
       font-size: 40px;
       font-weight: 700;
       margin-bottom: 10px;
     }
+
     & p {
       font-size: 16px;
       font-weight: 500;
       color: #616161;
       margin-bottom: 25px;
     }
+
     & a {
-      background-color: variables.$primary-color;
+      background-color: $primary-color;
       color: #fff;
       padding: 12px 36px;
     }
   }
-  &_bedroom {
+
+  &__bedroom {
     background-image: url(/pictures/inspiration-bedroom.png);
     position: relative;
-    width: functions.percent(404px);
+    width: percent(404px);
   }
-  &_bedroom-info {
+
+  &__bedroom-info {
     background-color: rgba(255, 255, 255, 0.767);
     padding: 32px 32px 32px 32px;
     position: absolute;
     bottom: 24px;
     left: 24px;
+
     & p {
       color: rgba(97, 97, 97, 1);
       font-size: 16px;
       font-weight: 500;
       margin-bottom: 8px;
     }
+
     & h4 {
       font-size: 28px;
       color: rgba(58, 58, 58, 1);

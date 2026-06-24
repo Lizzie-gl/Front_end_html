@@ -1,3 +1,10 @@
+@charset "UTF-8";
+/* @function percent-promo($px, $base: 643) {
+  @return ($px/$base) * 100%;
+}
+@function percent-sale($px, $base: 285) {
+  @return ($px/$base) * 100%;
+} */
 * {
   font-family: sans-serif;
   text-decoration: none;
@@ -16,19 +23,19 @@ header {
   padding: 30px 0px 30px 0px;
 }
 
-.header_navbar_list {
+.header_navbar___list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
-.header_navbar_list li {
+.header_navbar___list li {
   margin-right: 75px;
 }
-.header_navbar_list li:nth-child(3) {
+.header_navbar___list li:nth-child(3) {
   margin-right: 0;
 }
-.header_navbar_list li a {
+.header_navbar___list li a {
   font-size: 16px;
   font-weight: 500;
   color: black;
@@ -47,23 +54,43 @@ header {
 }
 
 .page-promo {
-  background-image: url(/pictures/page-promo-background.png);
+  width: 100%;
+  height: 715px;
+  /* background-image: url(/pictures/page-promo-background.png);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  padding: 10.625% 4.0277777778% 8.0555555556% 51.3194444444%;
+  background-repeat: no-repeat; */
+  /* background: url(../pictures/page-promo-background.png) no-repeat center center;
+  background-size: cover; */
+  padding: calc(10.625px * 1%) calc(4.0277777778px * 1%) calc(8.0555555556px * 1%) calc(51.3194444444px * 1%);
+  overflow: hidden;
+  position: relative;
 }
-.page-promo_info {
-  width: calc(44.6527777778% / 1px);
+.page-promo img {
+  display: inline-block;
+  min-width: 100%;
+  min-height: 100%;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+.page-promo__info {
+  width: 44.6527777778%;
   padding: 9.6423017107% 6.2208398134% 6.2208398134% 6.2208398134%;
   background-color: #fff3e3;
   text-align: left;
+  position: absolute;
+  z-index: 3;
+  top: 9.6423017107%;
+  right: 6.2208398134%;
 }
-.page-promo_info h2 {
+.page-promo__info h2 {
   font-size: 52px;
   color: #b88e2f;
 }
-.page-promo_info a {
+.page-promo__info a {
   width: 34.5256609642%;
   background-color: #b88e2f;
   padding: 3.8880248834% 11.6640746501%;
@@ -89,23 +116,23 @@ header {
 .range {
   margin-top: 55px;
 }
-.range_info {
+.range__info {
   text-align: center;
 }
-.range_info h3 {
+.range__info h3 {
   font-size: 32px;
 }
-.range_info p {
+.range__info p {
   font-size: 20px;
   color: #666666;
 }
-.range_rooms {
+.range__rooms {
   margin-top: 62px;
   display: flex;
   justify-content: center;
-  gap: 1.3888888889%;
+  gap: calc(1.3888888889px * 1%);
 }
-.range_rooms-option a img {
+.range__rooms-option a img {
   border-radius: 12px;
 }
 
@@ -121,10 +148,10 @@ header {
 .products {
   margin-top: 55px;
 }
-.products_types {
+.products__types {
   display: flex;
   justify-content: center;
-  gap: 2.2222222222%;
+  gap: calc(2.2222222222px * 1%);
   flex-wrap: wrap;
 }
 .products h3 {
@@ -134,61 +161,62 @@ header {
   font-weight: 700;
   margin-bottom: 32px;
 }
-.products_options {
-  width: 19.7916666667%;
+.products__options {
+  width: calc(19.7916666667px * 1%);
   background-color: #f4f5f7;
   margin-bottom: 32px;
   position: relative;
 }
-.products_options a {
+.products__options a {
   display: block;
 }
-.products_options a img {
+.products__options a img {
   width: 100%;
 }
-.products_options-info {
+.products__options-info {
   padding: 16px 0px 30px 5.6140350877%;
 }
-.products_options-info h4 {
+.products__options-info h4 {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 8px;
 }
-.products_options-info ul :first-child {
+.products__options-info ul :first-child {
   font-size: 16px;
   font-weight: 500;
   color: #898989;
   margin-bottom: 8px;
 }
-.products_options-info ul :last-child {
+.products__options-info ul :last-child {
   font-size: 20px;
   font-weight: 600;
 }
-.products_options--changed-price p {
+.products__options--changed-price p {
   color: #898989;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 16px; /* გადაიყვანე rem-ში, გამოიყენე ფუნქცია */
+  /* დაამატე unit less line height, გამოიყენე ფუნქცია */
   margin-bottom: 8px;
 }
-.products_options--changed-price ul {
+.products__options--changed-price ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: baseline;
   gap: 5.6140350877%;
 }
-.products_options--changed-price ul :first-child {
+.products__options--changed-price ul :first-child {
   color: #3a3a3a;
   font-size: 20px;
   font-weight: 600;
 }
-.products_options--changed-price ul :last-child {
+.products__options--changed-price ul :last-child {
   color: #898989;
   font-size: 16px;
   text-decoration: line-through;
   font-weight: 400;
 }
-.products_options .action-buttons {
+.products__options .action-buttons {
   display: none;
 }
 
@@ -235,51 +263,51 @@ header {
 
 .inspirations {
   background-color: rgb(252, 248, 243);
-  padding: 44px 0px 44px 6.9444444444%;
+  padding: 44px 0px 44px calc(6.9444444444px * 1%);
   text-align: left;
   display: flex;
   margin-top: 70px;
 }
-.inspirations_info {
+.inspirations__info {
   margin-top: 179px;
-  width: 29.3055555556%;
+  width: calc(29.3055555556px * 1%);
 }
-.inspirations_info h2 {
+.inspirations__info h2 {
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 10px;
 }
-.inspirations_info p {
+.inspirations__info p {
   font-size: 16px;
   font-weight: 500;
   color: #616161;
   margin-bottom: 25px;
 }
-.inspirations_info a {
+.inspirations__info a {
   background-color: #b88e2f;
   color: #fff;
   padding: 12px 36px;
 }
-.inspirations_bedroom {
+.inspirations__bedroom {
   background-image: url(/pictures/inspiration-bedroom.png);
   position: relative;
-  width: 28.0555555556%;
+  width: calc(28.0555555556px * 1%);
 }
-.inspirations_bedroom-info {
+.inspirations__bedroom-info {
   background-color: rgba(255, 255, 255, 0.767);
   padding: 32px 32px 32px 32px;
   position: absolute;
   bottom: 24px;
   left: 24px;
 }
-.inspirations_bedroom-info p {
+.inspirations__bedroom-info p {
   color: rgb(97, 97, 97);
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 8px;
 }
-.inspirations_bedroom-info h4 {
+.inspirations__bedroom-info h4 {
   font-size: 28px;
   color: rgb(58, 58, 58);
   font-weight: 600;
-}
+}/*# sourceMappingURL=main.css.map */
