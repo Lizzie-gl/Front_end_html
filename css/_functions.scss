@@ -1,0 +1,15 @@
+@function percent($px, $base: 1440) {
+  @return ($px / $base) * 100%;
+}
+@function rem($px, $base: 16) {
+  @return ($px / $base) * 1rem;
+}
+@function lineHeight($lineHeight, $fontSize) {
+  @return $lineHeight / $fontSize;
+}
+/* @function percent-promo($px, $base: 643) {
+  @return ($px/$base) * 100%;
+}
+@function percent-sale($px, $base: 285) {
+  @return ($px/$base) * 100%;
+} */
