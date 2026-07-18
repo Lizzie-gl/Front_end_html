@@ -17,18 +17,18 @@ header {
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  padding: 30px 0px 30px 0px;
+  padding: rem(30) 0;
 }
 
-.header_navbar {
-  &___list {
+.header__navbar {
+  &__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 
     & li {
-      margin-right: 75px;
+      margin-right: rem(75);
 
       &:nth-child(3) {
         margin-right: 0;
@@ -36,6 +36,7 @@ header {
 
       & a {
         font-size: $font-sm;
+        line-height: 1;
         font-weight: 500;
         color: black;
       }
@@ -48,7 +49,7 @@ header {
 
   & li {
     justify-content: space-between;
-    margin-right: 45px;
+    margin-right: rem(45);
 
     &:nth-child(4) {
       margin-right: 0;
@@ -58,14 +59,8 @@ header {
 
 .page-promo {
   width: 100%;
-  height: 715px;
-  /* background-image: url(/pictures/page-promo-background.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
-  /* background: url(../pictures/page-promo-background.png) no-repeat center center;
-  background-size: cover; */
-  padding: percent(153px) percent(58px) percent(116px) percent(739px);
+  min-height: rem(715);
+  padding: percent(153) percent(58) percent(116) percent(739);
   overflow: hidden;
   position: relative;
 
@@ -81,71 +76,79 @@ header {
   }
 
   &__info {
-    width: percent(643);
-    padding: percent(62, 643) percent(40, 643) percent(40, 643) percent(40, 643);
+    max-width: percent(643);
+    padding: rem(62) percent(40, 643) rem(40) percent(40, 643);
     background-color: #fff3e3;
     text-align: left;
     position: absolute;
     z-index: 3;
-    top: percent(62, 643);
+    top: percent(62, 443);
     right: percent(40, 643);
 
     & h2 {
-      font-size: 52px;
+      font-size: rem(52);
+      line-height: 1;
       color: $primary-color;
+      margin-bottom: rem(17);
     }
+  }
 
-    & a {
-      width: percent(222, 643);
-      background-color: $primary-color;
-      padding: percent(25, 643) percent(75, 643);
-      color: #fff;
-      font-weight: bold;
-      font-size: $font-sm;
-    }
+  & a {
+    width: percent(222, 643);
+    background-color: $primary-color;
+    padding: percent(25, 643) percent(75, 643);
+    color: #fff;
+    font-weight: bold;
+    font-size: $font-sm;
+    line-height: 1;
   }
 }
 
-.page-promo_info-title {
-  font-size: 18px;
-  letter-spacing: 3px;
+.page-promo__info-title {
+  font-size: rem(18);
+  line-height: lineHeight(65, 18);
+  letter-spacing: rem(3);
   color: #333333;
   font-weight: 600;
 }
 
-.page-promo_info-text {
-  font-size: 18px;
+.page-promo__info-text {
+  font-size: rem(18);
+  line-height: lineHeight(24, 18);
   color: #333333;
   font-weight: 500;
-  margin-bottom: 45px;
+  margin-bottom: rem(45);
 }
 
 .range {
-  margin-top: 55px;
+  margin-top: rem(55);
 
   &__info {
     text-align: center;
 
     & h3 {
-      font-size: 32px;
+      font-size: rem(32);
+      line-height: 1;
     }
 
     & p {
-      font-size: 20px;
+      font-size: rem(20);
+      line-height: 1;
       color: #666666;
     }
   }
 
   &__rooms {
-    margin-top: 62px;
+    margin-top: rem(62);
     display: flex;
     justify-content: center;
-    gap: percent(20px);
+    gap: percent(20);
+    flex-wrap: wrap;
 
     &-option {
       & a {
         & img {
-          border-radius: 12px;
+          border-radius: rem(12);
         }
       }
     }
@@ -155,34 +158,36 @@ header {
 .option-name {
   display: block;
   text-align: center;
-  margin-top: 30px;
-  font-size: 24px;
+  margin-top: rem(30);
+  font-size: rem(24);
   font-weight: 600;
   color: #333333;
 }
 
 .products {
-  margin-top: 55px;
+  margin-top: rem(55);
   &__types {
     display: flex;
     justify-content: center;
-    gap: percent(32px);
+    gap: percent(32);
     flex-wrap: wrap;
   }
 
   & h3 {
     text-align: center;
     color: #3a3a3a;
-    font-size: 40px;
+    font-size: rem(40);
     font-weight: 700;
-    margin-bottom: 32px;
+    margin-bottom: rem(32);
   }
 
   &__options {
-    width: percent(285px);
+    width: percent(285);
     background-color: #f4f5f7;
-    margin-bottom: 32px;
+    margin-bottom: rem(32);
     position: relative;
+    overflow: hidden;
+    z-index: 1;
 
     & a {
       display: block;
@@ -196,20 +201,20 @@ header {
       padding: 16px 0px 30px percent(16, 285);
 
       & h4 {
-        font-size: 24px;
+        font-size: rem(24);
         font-weight: 600;
-        margin-bottom: 8px;
+        margin-bottom: rem(8);
       }
 
       & ul :first-child {
-        font-size: 16px;
+        font-size: rem(16);
         font-weight: 500;
         color: #898989;
-        margin-bottom: 8px;
+        margin-bottom: rem(8);
       }
 
       & ul :last-child {
-        font-size: 20px;
+        font-size: rem(20);
         font-weight: 600;
       }
     }
@@ -218,9 +223,8 @@ header {
       & p {
         color: #898989;
         font-weight: 500;
-        font-size: 16px; /* გადაიყვანე rem-ში, გამოიყენე ფუნქცია */
-        /* დაამატე unit less line height, გამოიყენე ფუნქცია */
-        margin-bottom: 8px;
+        font-size: rem(16);
+        margin-bottom: rem(8);
       }
       & ul {
         display: flex;
@@ -231,123 +235,272 @@ header {
 
         & :first-child {
           color: #3a3a3a;
-          font-size: 20px;
+          font-size: rem(20);
           font-weight: 600;
         }
 
         & :last-child {
           color: #898989;
-          font-size: 16px;
+          font-size: rem(16);
           text-decoration: line-through;
           font-weight: 400;
         }
       }
     }
+    .sale-30 {
+      position: absolute;
+      top: rem(25);
+      right: rem(25);
+      width: rem(48);
+      height: rem(48);
+      background-color: $sale-red;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: $font-sm;
+      color: #fff;
+      font-weight: 500;
+      z-index: 2;
+    }
 
-    & .action-buttons {
+    .sale-new {
+      position: absolute;
+      top: rem(25);
+      right: rem(25);
+      width: rem(48);
+      height: rem(48);
+      background-color: $sale-blue;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: $font-sm;
+      color: #fff;
+      font-weight: 500;
+      z-index: 2;
+    }
+    .action-buttons {
       display: none;
-      //   }
-      //   &:hover {
-      // background-color: rgba(58, 58, 58, 1);
+      position: absolute;
+      inset: 0;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 3;
+      background-color: rgba(58, 58, 58, 0.5);
+
+      & a {
+        font-size: rem(16);
+        color: $primary-color;
+        padding: rem(12) rem(52);
+        background-color: white;
+        margin-bottom: rem(24);
+        font-weight: bold;
+      }
+
+      &__options {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        & button {
+          background: none;
+          border: none;
+          color: white;
+          font-weight: bold;
+          & img {
+            width: rem(13);
+            height: rem(13);
+          }
+        }
+      }
+    }
+    &:hover .action-buttons {
+      display: flex;
     }
   }
 }
-
-.sale-30 {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  width: 48px;
-  height: 48px;
-  background-color: $sale-red;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: $font-sm;
-  color: #fff;
-  font-weight: 500;
+.center {
+  display: block;
+  text-align: center;
 }
-
-.sale-new {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  width: 48px;
-  height: 48px;
-  background-color: $sale-blue;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: $font-sm;
-  color: #fff;
-  font-weight: 500;
-}
-
 .show-more {
   display: inline-block;
-  padding: 12px 74px;
-  border: 1px solid rgba(184, 142, 47, 1);
+  padding: rem(12) rem(74);
+  border: rem(1) solid rgba(184, 142, 47, 1);
   color: rgba(184, 142, 47, 1);
-  font-size: 16px;
+  font-size: rem(16);
   font-weight: 600;
 }
-
 .inspirations {
   background-color: rgba(252, 248, 243, 1);
-  padding: 44px 0px 44px percent(100px);
+  padding: rem(44) 0 rem(44) percent(100);
   text-align: left;
   display: flex;
-  margin-top: 70px;
+  margin-top: rem(70);
+  position: relative;
 
   &__info {
-    margin-top: 179px;
-    width: percent(422px);
+    margin-top: rem(179);
+    max-width: percent(422);
     & h2 {
-      font-size: 40px;
+      font-size: rem(40);
+      line-height: 1.2;
       font-weight: 700;
-      margin-bottom: 10px;
+      margin-bottom: rem(10);
     }
 
     & p {
-      font-size: 16px;
+      font-size: rem(16);
+      line-height: 1.5;
       font-weight: 500;
       color: #616161;
-      margin-bottom: 25px;
+      margin-bottom: rem(25);
     }
 
     & a {
       background-color: $primary-color;
       color: #fff;
-      padding: 12px 36px;
+      padding: rem(12) rem(36);
     }
   }
 
   &__bedroom {
     background-image: url(/pictures/inspiration-bedroom.png);
     position: relative;
-    width: percent(404px);
+    width: percent(404);
+    display: flex;
+    flex-direction: column;
+    margin-right: rem(24);
+
+    & span a {
+      position: absolute;
+      background-color: $primary-color;
+      color: white;
+      font-weight: bold;
+      padding: rem(12);
+      bottom: rem(24);
+      left: rem(245);
+    }
+    &-info {
+      background-color: rgba(255, 255, 255, 0.767);
+      padding: rem(32);
+      position: absolute;
+      bottom: rem(24);
+      left: rem(24);
+
+      & p {
+        color: rgba(97, 97, 97, 1);
+        font-size: rem(16);
+        font-weight: 500;
+        margin-bottom: rem(8);
+      }
+
+      & h4 {
+        font-size: rem(28);
+        color: rgba(58, 58, 58, 1);
+        font-weight: 600;
+      }
+    }
   }
-
-  &__bedroom-info {
-    background-color: rgba(255, 255, 255, 0.767);
-    padding: 32px 32px 32px 32px;
+  .Next {
     position: absolute;
-    bottom: 24px;
-    left: 24px;
+    right: rem(55);
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    & button {
+      width: rem(48);
+      height: rem(48);
+      color: $primary-color;
+      background-color: white;
+      border: white;
+      border-radius: 50%;
+    }
+  }
+}
+.furniture {
+  text-align: center;
+  margin-top: rem(67);
+  position: relative;
+  &__info {
     & p {
+      font-size: rem(20);
       color: rgba(97, 97, 97, 1);
-      font-size: 16px;
-      font-weight: 500;
-      margin-bottom: 8px;
+      line-height: 1.5;
     }
-
-    & h4 {
-      font-size: 28px;
+    & h3 {
+      font-size: rem(40);
+      font-weight: bold;
       color: rgba(58, 58, 58, 1);
-      font-weight: 600;
+      line-height: 1.2;
     }
+  }
+}
+footer {
+  padding: rem(50) rem(100);
+  margin-top: rem(50);
+  flex-wrap: nowrap;
+  border-top: rem(2) solid rgba($color: #000000, $alpha: 0.17);
+  .footer-up {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer-info {
+    max-width: percent(285);
+    & h2 {
+      font-size: rem(24);
+      line-height: 1;
+      margin-bottom: rem(50);
+    }
+    & p {
+      font-size: rem(16);
+      color: rgba(159, 159, 159, 1);
+    }
+  }
+  .links {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: rem(62) rem(62) rem(62) rem(62) rem(62);
+  }
+  .link a {
+    color: black;
+    font-size: rem(16);
+    font-weight: 500;
+  }
+  .link-name a {
+    color: rgba(159, 159, 159, 1);
+    font-size: rem(16);
+    font-weight: 500;
+  }
+  .newsletter {
+    & p {
+      font-size: rem(16);
+      color: rgba(159, 159, 159, 1);
+      margin-bottom: rem(50);
+    }
+    & input {
+      border: none;
+      border-bottom: solid rem(2) black;
+      padding-bottom: rem(3);
+    }
+    & button {
+      font-size: rem(14);
+      font-weight: 500;
+      border: none;
+      background-color: white;
+      border-bottom: solid rem(2) black;
+      padding-bottom: rem(3);
+    }
+  }
+  .footer-lower {
+    border-top: rem(2) solid rgba($color: #000000, $alpha: 0.17);
+    padding-top: rem(32);
   }
 }
